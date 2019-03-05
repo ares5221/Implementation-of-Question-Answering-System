@@ -3,14 +3,14 @@
 from aiohttp import web
 import asyncio
 from bertClient import getBestAnswer
-
+import time
 
 async def handle(request):
     varDict = request.query
     question = varDict['question']
     print('从url解析得到的查询问题信息：', question)
     res = getBestAnswer(question)
-    print(res)
+    print('本次咨询结束，当前时间为：', time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
     return web.Response(text=res)
 
 
