@@ -1,11 +1,13 @@
 # Implementation-of-Question-Answering-System
 
-this project for q-a system
-first,you should download the BERT chinese mmodel chinese_L-12_H-768_A-12
+##this project for q-a system
+####first,you should download the BERT chinese mmodel chinese_L-12_H-768_A-12
 secend，you should start the bert-server frmo hanxiao
-  if you are win10 cd to this dir /bert-as-service 
+ ---
+  >if you are win10 cd to this dir /bert-as-service 
   bert-serving-start -model_dir G:/pythonworkspace/chinese_L-12_H-768_A-12 -num_worker=4
-  if you are in Linux ubuntu 17.0
+ ---
+ > if you are in Linux ubuntu 17.0
   pip install bert-serving-service
   pip install bert-serving-client
   cd to /bert-as-service,there is not cls: ert-serving-start 
@@ -14,7 +16,7 @@ secend，you should start the bert-server frmo hanxiao
   now you can in python>3.5 and tensorflow>1.10 if your tf is 1.8,you can pip3 install tensorflow=1.10
   then  python3 bert-serving-start -model_dir /home/chinese_L-12_H-768_A-12 -num_worker=4
   
-  
+  ---
   
   usage: bert-serving-start -model_dir /home/liujiefei/pythonworkspace/06bertserver/02bertapp/chinese_L-12_H-768_A-12 -num_worker=4
                  ARG   VALUE
@@ -75,13 +77,15 @@ I:WORKER-0:[__i:gen:506]:ready and listening!
 I:WORKER-1:[__i:gen:506]:ready and listening!
 I:WORKER-2:[__i:gen:506]:ready and listening!
 I:WORKER-3:[__i:gen:506]:ready and listening!
+---
 
 now the bert-server is start
+---
 you can cd G:/Implementation-of-Question-Answering-System/qa
 or :~/pythonworkspace/qa-bertapp$ python3 bertClient.py
 
-now the qa system is start
-open your broswer:
-http://youip:8080/?question=你好
+#now the qa system is start
+#open your broswer:
+#http://youip:8080/?question=你好
 get your answer
 
