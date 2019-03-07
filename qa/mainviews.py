@@ -7,7 +7,7 @@ from bertClient import getBestAnswer
 async def index(request):
     varDict = request.query
     question = varDict['gid']
-    print(varDict, '@@@@@@@@@@@@@@@@@@@@@@',question)
+    print(varDict, '@@@@@@@@@@@@@@@@@@@@@@', question)
     res = getBestAnswer(question)
     print(res)
     return web.Response(text=res)

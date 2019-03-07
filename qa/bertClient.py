@@ -4,7 +4,6 @@ from bert_serving.client import BertClient
 import xlrd
 import numpy as np
 
-
 filePath = r'G:/tf-start/Implementation-of-Question-Answering-System/data/qa-all-data.xlsx'
 
 
@@ -36,8 +35,6 @@ def bertconvert(datas):
     np.save("G:/tf-start/Implementation-of-Question-Answering-System/data/question2vec1.npy", ss)
 
 
-
-
 def getBestAnswer(qdata):
     b = np.load("G:/tf-start/Implementation-of-Question-Answering-System/data/question2vec1.npy")
     print('step 3:load question vector success!!!!!!!!!!!!!!!!', len(b))
@@ -45,7 +42,7 @@ def getBestAnswer(qdata):
     testvec = bc.encode(["".join(qdata.split())])
     print('step4: cal cosine_similarity')
     maxsimil = 0
-    for i in range(len(b)): #3625
+    for i in range(len(b)):  # 3625
         simil_test_ques = cosine_similarity(b[i], testvec[0])
         if simil_test_ques > maxsimil:
             maxsimil = simil_test_ques
@@ -81,7 +78,7 @@ def cosine_similarity(vector1, vector2):
     if normA == 0.0 or normB == 0.0:
         return 0
     else:
-        return round(dot_product / ((normA**0.5)*(normB**0.5)), 2)
+        return round(dot_product / ((normA ** 0.5) * (normB ** 0.5)), 2)
 
 
 if __name__ == '__main__':
@@ -92,5 +89,3 @@ if __name__ == '__main__':
         bertconvert(q_data)
     testQ = '老师们，我在一线的时候总有一个问题，如何能够提高小组讨论的有效性？！如何避免讨论后小组派代表没人愿意说？或者一讨论学生们就聊别的这一问题呢？'
     getBestAnswer(testQ)
-
-

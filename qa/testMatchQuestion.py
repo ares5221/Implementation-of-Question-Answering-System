@@ -15,6 +15,7 @@ def testBERTEncode():
     print(bcs2)
     print(len(bcs1[0]), 'and ', len(bcs2[0]))
 
+
 if __name__ == '__main__':
     testQ = '怎么样让学生在课堂合作学习中发挥最佳效果？'
     print(getBestAnswer(testQ))
