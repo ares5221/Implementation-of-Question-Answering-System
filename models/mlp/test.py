@@ -39,7 +39,7 @@ train_sparse_label[np.arange(0, train_num), train_label] = 1
 test_image = test_image.reshape(test_num, 28 * 28) / 255 - 0.5
 test_sparse_label = np.zeros((test_num, out_num))
 test_sparse_label[np.arange(0, test_num), test_label] = 1
-
+print(type(train_image))
 select = 1
 if select > 0:
     # 开始训练
