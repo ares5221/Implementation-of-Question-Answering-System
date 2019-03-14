@@ -6,6 +6,7 @@ secend，you should start the bert-server frmo hanxiao
  ---
   >if you are win10 cd to this dir /bert-as-service 
   bert-serving-start -model_dir G:/pythonworkspace/chinese_L-12_H-768_A-12 -num_worker=4
+  这里要注意-num_worker=4表示工作个数，一般就是你机器的cpu核数，如果超过，效率会降低。
  ---
  > if you are in Linux ubuntu 17.0
   pip install bert-serving-service
