@@ -1,10 +1,13 @@
 #!/usr/bin/env python
 # _*_ coding:utf-8 _*_
 from bert_serving.client import BertClient
-import xlrd
+import xlrd, os
 import numpy as np
-
-filePath = r'G:/tf-start/Implementation-of-Question-Answering-System/data/qa-all-data.xlsx'
+import tensorflow as tf
+from calSimilarityByq2qModel import calSimilarityByq2qModel
+from getAnswerByq2aModel import getAnswerByq2aModel
+path = os.path.abspath('..')
+filePath = path +'/data/qa-all-data.xlsx'
 
 
 def read_excel():
@@ -32,11 +35,12 @@ def bertconvert(datas):
         newdata = "".join(data.split())  # data.replace(' ', '')
         question_list.append(newdata)
     ss = bc.encode(question_list)
-    np.save("G:/tf-start/Implementation-of-Question-Answering-System/data/question2vec1.npy", ss)
+    np.save(path + "/data/question2vec1.npy", ss)
 
 
+#  1默认问题答案匹配方案,通过生成的向量间余弦相似度比较,得到最相似的问题,再得到对应答案
 def getBestAnswer(qdata):
-    b = np.load("G:/tf-start/Implementation-of-Question-Answering-System/data/question2vec1.npy")
+    b = np.load(path + "/data/question2vec1.npy")
     print('step 3:load question vector success!!!!!!!!!!!!!!!!', len(b))
     bc = BertClient()
     testvec = bc.encode(["".join(qdata.split())])
@@ -55,18 +59,6 @@ def getBestAnswer(qdata):
     return bestAns
 
 
-def getAnsByIndex(index):
-    print('step5：通过问题索引从excel文档中获取对应的答案...')
-    workbook = xlrd.open_workbook(filePath)
-    sheet_name = workbook.sheet_names()[0]
-    sheet = workbook.sheet_by_name(sheet_name)
-    if sheet.cell(index, 13).value is not '':
-        ans = sheet.cell(index, 13).value
-    else:
-        ans = '该问题正在讨论中...'
-    return ans
-
-
 def cosine_similarity(vector1, vector2):
     dot_product = 0.0
     normA = 0.0
@@ -81,6 +73,79 @@ def cosine_similarity(vector1, vector2):
         return round(dot_product / ((normA ** 0.5) * (normB ** 0.5)), 2)
 
 
+def getAnsByIndex(index):
+    print('step5：通过问题索引从excel文档中获取对应的答案...')
+    workbook = xlrd.open_workbook(filePath)
+    sheet_name = workbook.sheet_names()[0]
+    sheet = workbook.sheet_by_name(sheet_name)
+    if sheet.cell(index, 13).value is not '':
+        ans = sheet.cell(index, 13).value
+    else:
+        ans = '该问题正在讨论中...'
+    return ans
+
+
+#  2通过一个训练好的问题到问题的多层感知机来比较找到与输入问题最相似的问题
+def getBestAnswer2bySimilyQuestionByq2qModel(qdata):
+    datapath = os.path.abspath('..')
+    b = np.load(datapath + "/data/question2vec1.npy")
+    print('step 3:load question vector form qa-all-data.xlsx success!!!!!!!!!', len(b))
+    bc = BertClient()
+    testvec = bc.encode(["".join(qdata.split())])
+    print('step4: cal cosine_similarity by q2q mlp model')
+
+    index, maxsimil = calSimilarityByq2qModel(b, testvec)
+    print('step4 获取到最相似问题的索引@@@@@@@@', maxsimil, index)
+    index = index + 2  # 由于表中数据索引从第二列开始
+    workbook = xlrd.open_workbook(filePath)
+    sheet_name = workbook.sheet_names()[0]
+    sheet = workbook.sheet_by_name(sheet_name)
+    if sheet.cell(index, 2).value is not '':
+        similyQue = sheet.cell(index, 2).value
+    else:
+        similyQue = sheet.cell(index, 1).value
+    print('在问答数据中查找得到相似问题是', similyQue)
+
+    bestAns = getAnsByIndex(index)
+    print('问题是：', qdata)
+    print('回答是：', bestAns)
+    return bestAns
+
+
+#  3通过一个训练好的问题到问题的多层感知机来比较找到与输入问题最相似的问题
+#   然后通过训练好的问题到答案的MLP通过上一步得到的最相似问题来找到对应的答案
+def getBestAnswer3bySimilyQuestionByQ2QandQ2AModel(qdata):
+    q2v = np.load(path + "/data/question2vec1.npy")
+    a2v = np.load(path + "/data/answer2vector.npy")
+    bc = BertClient()
+    queryvec = bc.encode(["".join(qdata.split())])
+    # 获取相似问题
+    tf.reset_default_graph()
+    index, maxsimil = calSimilarityByq2qModel(q2v, queryvec)
+    print('step3 获取到最相似问题的索引--->>', maxsimil, index)
+    index = index + 2  # 由于表中数据索引从第二列开始
+    workbook = xlrd.open_workbook(filePath)
+    sheet_name = workbook.sheet_names()[0]
+    sheet = workbook.sheet_by_name(sheet_name)
+    if sheet.cell(index, 2).value is not '':
+        similyQue = sheet.cell(index, 2).value
+    else:
+        similyQue = sheet.cell(index, 1).value
+    print('step3 在问答数据中查找得到相似问题是---->', similyQue)
+    # 获取对应答案
+    ansvec = q2v[index-2]
+    tf.reset_default_graph()
+    ansindex, anssimilary = getAnswerByq2aModel(a2v, ansvec)
+    if sheet.cell(ansindex+2, 13).value is not '':
+        bestAns = sheet.cell(ansindex+2, 13).value
+    else:
+        bestAns = '相关答案正在编辑中...'
+    print('step4 在问答数据中查找得到答案是---->', bestAns)
+    print('问题是：', qdata)
+    print('回答是：', bestAns)
+    return bestAns
+
+
 if __name__ == '__main__':
     print('START------111111111111111111')
     is_exist_bertvector = True
@@ -88,4 +153,8 @@ if __name__ == '__main__':
         q_data = read_excel()
         bertconvert(q_data)
     testQ = '老师们，我在一线的时候总有一个问题，如何能够提高小组讨论的有效性？！如何避免讨论后小组派代表没人愿意说？或者一讨论学生们就聊别的这一问题呢？'
-    getBestAnswer(testQ)
+    # testQ = '上课注意力不集中怎么办？'
+    testQ = '学生沉迷游戏怎么办'
+    # getBestAnswer(testQ)
+    # getBestAnswer2bySimilyQuestionByq2qModel(testQ)
+    getBestAnswer3bySimilyQuestionByQ2QandQ2AModel(testQ)

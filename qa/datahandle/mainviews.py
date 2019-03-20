@@ -4,6 +4,7 @@ from aiohttp import web
 from bertClient import getBestAnswer
 
 
+# 没有用的code
 async def index(request):
     varDict = request.query
     question = varDict['gid']

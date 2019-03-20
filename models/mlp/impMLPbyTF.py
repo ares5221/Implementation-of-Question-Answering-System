@@ -11,8 +11,8 @@ Y = np.array([Y, -(Y-1)]).T  # The model currently needs one column for each cla
 X, X_test, Y, Y_test = train_test_split(X, Y)
 
 # Parameters
-learning_rate = 0.001
-training_epochs = 100
+learning_rate = 0.01
+training_epochs = 50
 batch_size = 100
 display_step = 1
 
