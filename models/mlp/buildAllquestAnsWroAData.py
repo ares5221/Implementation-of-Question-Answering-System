@@ -84,7 +84,7 @@ def get_AllQuestAns():
             answer = '该问题正在讨论中。。。'
         ans.append(answer)
 
-        ranId = random.randint(2, sheet.nrows-2)
+        ranId = random.randint(2, sheet.nrows - 2)
         # print(ranId)
         if sheet.cell(ranId, 13).value is not '':
             wrongAns = sheet.cell(ranId, 13).value
@@ -100,6 +100,7 @@ def get_AllQuestAns():
     print('全部的问题/答案/错误答案数据已经保存完毕')
     return save_alldata
 
+
 def get_atecQuestAns():
     file_dir = 'G:/tf-start/Implementation-of-Question-Answering-System/data/atec_nlp.csv'
     # 导入204746条数据
@@ -112,6 +113,7 @@ def get_atecQuestAns():
                 allqa = [i[1], i[2], i[3]]
                 saveatecdata.append(allqa)
     return saveatecdata
+
 
 if __name__ == '__main__':
     isgetAllQA = True

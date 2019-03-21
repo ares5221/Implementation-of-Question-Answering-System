@@ -7,13 +7,13 @@ import os
 
 ### 训练问题到答案的MLP模型 通过数据集qa-all-data
 #  /data/X_qa_all_data.npy文件保存AllquestAnsWroA.csv通过bert encode后的结果,用于train q2a model
-X = np.load(os.path.abspath('..') +'/data/X_qa_all_data.npy')
-Y = np.load(os.path.abspath('..') +'/data/Y_qa_all_data.npy')
-Y_label = np.array([Y, -(Y-1)]).T
+X = np.load(os.path.abspath('..') + '/data/X_qa_all_data.npy')
+Y = np.load(os.path.abspath('..') + '/data/Y_qa_all_data.npy')
+Y_label = np.array([Y, -(Y - 1)]).T
 print(X.shape, Y_label.shape)
 
 for i in range(len(X)):
-    if len(X[i]) ==0:
+    if len(X[i]) == 0:
         print(i)
     # print(np.array(i).shape)
 X.reshape(10000, 1536)
@@ -39,6 +39,7 @@ n_classes = 2  # Number of classes to predict
 x = tf.placeholder("float", [None, n_input])
 y = tf.placeholder("float", [None, n_classes])
 
+
 # Create model
 def multilayer_perceptron(x, weights, biases):
     layer_1 = tf.add(tf.matmul(x, weights['h1']), biases['b1'])
@@ -46,6 +47,7 @@ def multilayer_perceptron(x, weights, biases):
     out_layer = tf.matmul(layer_1, weights['out']) + biases['out']
     out_layer = tf.nn.softmax(out_layer)
     return out_layer
+
 
 # Store layers weight & bias
 weights = {
@@ -64,28 +66,27 @@ pred = multilayer_perceptron(x, weights, biases)
 cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=pred, labels=y))
 optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost)
 
-
 # Initializing the variables
 init = tf.global_variables_initializer()
 
 with tf.Session() as sess:
     sess.run(init)
 
-    saver = tf.train.Saver(max_to_keep=4)   # save model
-    for epoch in range(training_epochs):   # Training cycle
+    saver = tf.train.Saver(max_to_keep=4)  # save model
+    for epoch in range(training_epochs):  # Training cycle
         avg_cost = 0.
-        total_batch = int(len(X_train)/batch_size)
+        total_batch = int(len(X_train) / batch_size)
         X_batches = np.array_split(X_train, total_batch)
         Y_batches = np.array_split(Y_train, total_batch)
-        for i in range(total_batch):   # Loop over all batches
+        for i in range(total_batch):  # Loop over all batches
             batch_x, batch_y = X_batches[i], Y_batches[i]
             # Run optimization op (backprop) and cost op (to get loss value)
             _, c = sess.run([optimizer, cost], feed_dict={x: batch_x,
                                                           y: batch_y})
-            avg_cost += c / total_batch    # Compute average loss
+            avg_cost += c / total_batch  # Compute average loss
         saver.save(sess, 'ckptque2ans/mlp.ckpt', global_step=epoch)
         if epoch % display_step == 0:  # Display logs per epoch step
-            print("Epoch:", '%04d' % (epoch+1), "cost=", "{:.9f}".format(avg_cost))
+            print("Epoch:", '%04d' % (epoch + 1), "cost=", "{:.9f}".format(avg_cost))
     print("Optimization Finished!")
 
     # Test model

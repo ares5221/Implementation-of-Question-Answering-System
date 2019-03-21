@@ -16,8 +16,8 @@ Y = np.load(os.path.abspath('..') +'/data/Y_atec_100000.npy')
 # Y = np.load("G:/tf-start/Implementation-of-Question-Answering-System/models/mlp/Y_labelmark15000.npy")
 Y_label = np.array([Y, -(Y-1)]).T
 print(X.shape, Y_label.shape)
-X_train, X_test = X[0:50000], X[40000:]
-Y_train, Y_test = Y_label[0:50000], Y_label[40000:]
+X_train, X_test = X[0:100000], X[40000:]
+Y_train, Y_test = Y_label[0:100000], Y_label[40000:]
 print(X[0], Y[0])
 print(X_train, Y_train)
 print(X_test.shape, Y_test.shape)

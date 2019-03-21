@@ -6,8 +6,9 @@ import numpy as np
 import tensorflow as tf
 from calSimilarityByq2qModel import calSimilarityByq2qModel
 from getAnswerByq2aModel import getAnswerByq2aModel
+
 path = os.path.abspath('..')
-filePath = path +'/data/qa-all-data.xlsx'
+filePath = path + '/data/qa-all-data.xlsx'
 
 
 def read_excel():
@@ -133,11 +134,11 @@ def getBestAnswer3bySimilyQuestionByQ2QandQ2AModel(qdata):
         similyQue = sheet.cell(index, 1).value
     print('step3 在问答数据中查找得到相似问题是---->', similyQue)
     # 获取对应答案
-    ansvec = q2v[index-2]
+    ansvec = q2v[index - 2]
     tf.reset_default_graph()
     ansindex, anssimilary = getAnswerByq2aModel(a2v, ansvec)
-    if sheet.cell(ansindex+2, 13).value is not '':
-        bestAns = sheet.cell(ansindex+2, 13).value
+    if sheet.cell(ansindex + 2, 13).value is not '':
+        bestAns = sheet.cell(ansindex + 2, 13).value
     else:
         bestAns = '相关答案正在编辑中...'
     print('step4 在问答数据中查找得到答案是---->', bestAns)
