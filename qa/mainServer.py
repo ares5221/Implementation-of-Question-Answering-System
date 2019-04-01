@@ -7,7 +7,10 @@ import asyncio
 from bertClient import getBestAnswer
 from bertClient import getBestAnswer2bySimilyQuestionByq2qModel
 from bertClient import getBestAnswer3bySimilyQuestionByQ2QandQ2AModel
-import time
+import time, os, csv
+
+path = os.path.abspath('..')
+save_log_dir = path + '/log/resultLog.csv'
 
 
 async def handle(request):
@@ -16,8 +19,7 @@ async def handle(request):
     print('从url解析得到的查询问题信息：', question)
     # 方法一,比较余弦相似度查找相似问题
     res1, res2 = getBestAnswer(question)
-    print('___________$$$$$$$$$$$$$$$$$$',res2,res1)
-    ss = {'res1':res1, 'res2':res2}
+    ss = {'res1': res1, 'res2': res2}
     # data = json.dumps(ss, ensure_ascii=False)
     # # 方法二, 通过MLP比较查找相似问题
     # res = getBestAnswer2bySimilyQuestionByq2qModel(question)
@@ -34,8 +36,12 @@ async def result(request):
     similaryQuestion = varDict['simQue']
     similaryValue = varDict['value']
     print('从url解析得到的查询问题信息：', question, similaryQuestion, similaryValue)
-    
-    return web.Response(text='OK')
+    news = [question, similaryQuestion, similaryValue]
+    with open(save_log_dir, 'a', newline='', encoding='utf-8') as csvfile:
+        spamwriter = csv.writer(csvfile)
+        spamwriter.writerow(news)
+    print('回传信息已经保存在log文件中!!!!!')
+    return web.Response(text='回传信息已经保存OK')
 
 
 async def init_app():
