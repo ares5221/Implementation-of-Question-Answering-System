@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # _*_ coding:utf-8 _*_
 from bertClient import getBestAnswer
+import re
+from bert_serving.client import BertClient
 
 
 def testBERTEncode():
@@ -18,5 +20,10 @@ def testBERTEncode():
 
 if __name__ == '__main__':
     testQ = '怎么样让学生在课堂合作学习中发挥最佳效果？'
-    print(getBestAnswer(testQ))
+    # print(getBestAnswer(testQ))
     # testBERTEncode()  #test
+    ss = '老师您好，我是i你很棒棒爱国啊嘎嘎大'
+    sss = '16周问题：班级里的孩子成绩差异大该怎么办？班级里的孩子成绩有好有坏，入学时都差不多，到了'
+    print(sss)
+    ssss = re.sub(r'^.*周问题：', "", sss)
+    print('----->', ssss)
