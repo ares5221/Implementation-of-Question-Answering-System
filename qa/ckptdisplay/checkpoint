@@ -1,0 +1,5 @@
+model_checkpoint_path: "mlp.ckpt-599"
+all_model_checkpoint_paths: "mlp.ckpt-596"
+all_model_checkpoint_paths: "mlp.ckpt-597"
+all_model_checkpoint_paths: "mlp.ckpt-598"
+all_model_checkpoint_paths: "mlp.ckpt-599"

@@ -10,21 +10,23 @@ import os
 # path2 = os.path.abspath('..')
 # print(path1)
 #  /data/X_atec_50000.npy文件保存atec_nlp.csv通过bert encode后的结果,用于train q2q model
-X = np.load(os.path.abspath('..') +'/data/X_atec_100000.npy')
-Y = np.load(os.path.abspath('..') +'/data/Y_atec_100000.npy')
+# X = np.load(os.path.abspath('..') +'/data/X_atec_100000.npy')
+# Y = np.load(os.path.abspath('..') +'/data/Y_atec_100000.npy')
+X = np.load(os.path.abspath('..') +'/data/X_qa_all_data.npy')
+Y = np.load(os.path.abspath('..') +'/data/Y_qa_all_data.npy') #为了展示项目
 # X = np.load("G:/tf-start/Implementation-of-Question-Answering-System/models/mlp/X_labelmark15000.npy")
 # Y = np.load("G:/tf-start/Implementation-of-Question-Answering-System/models/mlp/Y_labelmark15000.npy")
 Y_label = np.array([Y, -(Y-1)]).T
 print(X.shape, Y_label.shape)
-X_train, X_test = X[0:100000], X[40000:]
-Y_train, Y_test = Y_label[0:100000], Y_label[40000:]
+X_train, X_test = X[0:8000], X[2000:]
+Y_train, Y_test = Y_label[0:8000], Y_label[2000:]
 print(X[0], Y[0])
 print(X_train, Y_train)
 print(X_test.shape, Y_test.shape)
 
 # Parameters
 learning_rate = 0.001
-training_epochs = 400
+training_epochs = 600
 batch_size = 100
 display_step = 10
 
@@ -78,7 +80,7 @@ with tf.Session() as sess:
             _, c = sess.run([optimizer, cost], feed_dict={x: batch_x,
                                                           y: batch_y})
             avg_cost += c / total_batch    # Compute average loss
-        saver.save(sess, 'ckptque2que/mlp.ckpt', global_step=epoch)
+        saver.save(sess, 'ckptdisplay/mlp.ckpt', global_step=epoch)
         if epoch % display_step == 0:  # Display logs per epoch step
             print("Epoch:", '%04d' % (epoch+1), "cost=", "{:.9f}".format(avg_cost))
     print("Optimization Finished!")

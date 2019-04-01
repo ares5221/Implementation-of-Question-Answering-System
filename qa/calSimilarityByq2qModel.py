@@ -45,6 +45,7 @@ def calSimilarityByq2qModel(q1vec, q2vec):
     with tf.Session() as sess:
         sess.run(init)
         model_file = tf.train.latest_checkpoint('ckptque2que/')
+        # model_file = tf.train.latest_checkpoint('ckptdisplay/')
         saver = tf.train.Saver()
         saver.restore(sess, model_file)
 
@@ -55,15 +56,15 @@ def calSimilarityByq2qModel(q1vec, q2vec):
             testbatch[0] = np.append(q1vec[i], q2vec).tolist()
             # print('s1 s2相似度为', sess.run(pred, feed_dict={x: testbatch}))
             res = sess.run(pred, feed_dict={x: testbatch})[0][0]
-            # if res > maxsimil:
-            #     maxsimil = res
-            #     index = i
-            #     print(index, maxsimil)
-            if res > 0.95:
+            if res > maxsimil:
                 maxsimil = res
                 index = i
                 print(index, maxsimil)
-                break
+            # if res >= 0.95:
+            #     maxsimil = res
+            #     index = i
+            #     print(index, maxsimil)
+            #     break
 #############################################
         # testbatch = [[] for i in range(1)]
         # testbatch[0] = np.append(q1vec, q2vec).tolist()
