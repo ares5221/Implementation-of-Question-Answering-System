@@ -17,7 +17,7 @@ filePath = path + '/data/qa-clean-data.csv'
 
 def getBestAnswer(qdata):
     b = np.load(path + "/data/question2vec1.npy")
-    print('step 1:导入问答数据中问题向量完成!!!,目前有效问题条数为:', len(b))
+    print('step1:导入问答数据中问题向量完成!!!,目前有效问题条数为:', len(b))
     bc = BertClient()
     testvec = bc.encode(["".join(qdata.split())])
     print('step2: 计算输入问题与问答数据中各个问题的相似度...')
@@ -65,7 +65,7 @@ def getSimilaryQuestionByIndex(index):
 
 
 if __name__ == '__main__':
-    print('开始查询问题--->')
+    print('开始查询相似问题--->')
     # testQ = '老师们，我在一线的时候总有一个问题，如何能够提高小组讨论的有效性？！如何避免讨论后小组派代表没人愿意说？或者一讨论学生们就聊别的这一问题呢？'
     # testQ = '上课注意力不集中怎么办？'
     # testQ = '如何提高学生上课注意力'

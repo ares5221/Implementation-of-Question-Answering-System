@@ -30,7 +30,7 @@ print(X_test.shape, Y_test.shape)
 
 # Parameters
 learning_rate = 0.001
-training_epochs = 600
+training_epochs = 1000
 batch_size = 100
 display_step = 10
 
@@ -86,7 +86,7 @@ with tf.Session() as sess:
             _, c = sess.run([optimizer, cost], feed_dict={x: batch_x,
                                                           y: batch_y})
             avg_cost += c / total_batch  # Compute average loss
-        saver.save(sess, 'ckptdisplay/mlp.ckpt', global_step=epoch)
+        saver.save(sess, 'ckptque2que/mlp.ckpt', global_step=epoch)
         if epoch % display_step == 0:  # Display logs per epoch step
             print("Epoch:", '%04d' % (epoch + 1), "cost=", "{:.9f}".format(avg_cost))
     print("Optimization Finished!")

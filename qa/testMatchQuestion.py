@@ -27,3 +27,10 @@ if __name__ == '__main__':
     print(sss)
     ssss = re.sub(r'^.*周问题：', "", sss)
     print('----->', ssss)
+    c = [-10, -5, 0, 5, 3, 10, 15, -20, 25]
+
+    print(c.index(min(c))) # 返回最小值
+
+    print(c.index(max(c)))# 返回最大值
+
+

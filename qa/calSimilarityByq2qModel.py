@@ -45,33 +45,40 @@ def calSimilarityByq2qModel(q1vec, q2vec):
     with tf.Session() as sess:
         sess.run(init)
         model_file = tf.train.latest_checkpoint('ckptque2que/')
-        # model_file = tf.train.latest_checkpoint('ckptdisplay/')
         saver = tf.train.Saver()
         saver.restore(sess, model_file)
 
-##########################################
+        ##########################################
+        '''
+        从问答数据中选取5个语义最相似的问题作为候选问题
+        '''
         maxsimil, index = 0, 0
-        for i in range(len(q1vec)):  # 3625
+        simlist, idlist = [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]
+        for i in range(len(q1vec)):
             testbatch = [[] for i in range(1)]
             testbatch[0] = np.append(q1vec[i], q2vec).tolist()
-            # print('s1 s2相似度为', sess.run(pred, feed_dict={x: testbatch}))
             res = sess.run(pred, feed_dict={x: testbatch})[0][0]
-            if res > maxsimil:
-                maxsimil = res
-                index = i
-                print(index, maxsimil)
+            print(res, i)
+            if res > min(simlist):
+                simlist[simlist.index(min(simlist))] = res
+                idlist[simlist.index(min(simlist))] = i
+            #     print(res, i)
+            # if i == 0:
+            #     print(q1vec[0])
+            #     print(q2vec)
+            # if res > maxsimil:
+            #     maxsimil = res
+            #     index = i
+            #     print(index, maxsimil)
             # if res >= 0.95:
             #     maxsimil = res
             #     index = i
             #     print(index, maxsimil)
             #     break
-#############################################
-        # testbatch = [[] for i in range(1)]
-        # testbatch[0] = np.append(q1vec, q2vec).tolist()
-        # # print('s1 s2相似度为', sess.run(pred, feed_dict={x: testbatch}))
-        # res = sess.run(pred, feed_dict={x: testbatch})[0][0]
+        print('问题相似度:', simlist)
+        print('相似问题ID:', idlist)
+    #############################################
     return index, maxsimil
-
 
 
 if __name__ == '__main__':
@@ -80,10 +87,5 @@ if __name__ == '__main__':
     bc = BertClient()
     source = bc.encode(s1)
     query = bc.encode([s2])
-    print(query)
     res = calSimilarityByq2qModel(source, query)
     print(res)  # output is (0, 1.0)
-
-
-
-
