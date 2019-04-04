@@ -1,33 +1,35 @@
 #!/usr/bin/env python
 # _*_ coding:utf-8 _*_
 from bert_serving.client import BertClient
-import xlrd, os
+import os
 import numpy as np
+import csv
 
 path = os.path.abspath('..')
-filePath = path + '/data/qa-all-data.xlsx'
+filePath = path + '/data/qa-clean-data.csv'
 
 '''
-1默认问题答案匹配方案,通过生成的向量间余弦相似度比较,得到最相似的问题,再得到对应答案
+1默认问答系统方案:
+输入问题与问答数据中待比较的所有问题,首先通过BERT表示为向量
+然后用余弦相似度比较,得到语义最相似的问题与对应答案
 '''
 
 
 def getBestAnswer(qdata):
     b = np.load(path + "/data/question2vec1.npy")
-    print('step 3:load question vector success!!!!!!!!!!!!!!!!', len(b))
+    print('step 1:导入问答数据中问题向量完成!!!,目前有效问题条数为:', len(b))
     bc = BertClient()
     testvec = bc.encode(["".join(qdata.split())])
-    print('step4: cal cosine_similarity')
+    print('step2: 计算输入问题与问答数据中各个问题的相似度...')
     maxsimil = 0
-    for i in range(len(b)):  # 3625
-        simil_test_ques = cosine_similarity(b[i], testvec[0])
+    for i in range(1, len(b) + 1):
+        simil_test_ques = cosine_similarity(b[i - 1], testvec[0])
         if simil_test_ques > maxsimil:
             maxsimil = simil_test_ques
             index = i
-    print('step4 获取到最相似问题的索引@@@@@@@@', maxsimil, index)
-    index = index + 2  # 由于表中数据索引从第二列开始
-    similaryQuestion = getSimilaryQuestionByIndex(index)
-    bestAns = getAnsByIndex(index)
+    print('step3 获取最相似问题的相似度/索引:---->', maxsimil, index)
+
+    similaryQuestion, bestAns = getSimilaryQuestionByIndex(index)
     print('问题是：', qdata)
     print('相似问题是：', similaryQuestion)
     print('回答是：', bestAns)
@@ -35,6 +37,7 @@ def getBestAnswer(qdata):
 
 
 def cosine_similarity(vector1, vector2):
+    '''计算余弦相似度'''
     dot_product = 0.0
     normA = 0.0
     normB = 0.0
@@ -49,33 +52,23 @@ def cosine_similarity(vector1, vector2):
 
 
 def getSimilaryQuestionByIndex(index):
-    # print('step5：通过问题索引从excel文档中获取对应的答案...')
-    workbook = xlrd.open_workbook(filePath)
-    sheet_name = workbook.sheet_names()[0]
-    sheet = workbook.sheet_by_name(sheet_name)
-    if sheet.cell(index, 2).value is not '':
-        simQuestion = sheet.cell(index, 2).value
-    else:
-        simQuestion = sheet.cell(index, 1).value
-    return simQuestion
-
-
-def getAnsByIndex(index):
-    print('step5：通过问题索引从excel文档中获取对应的答案...')
-    workbook = xlrd.open_workbook(filePath)
-    sheet_name = workbook.sheet_names()[0]
-    sheet = workbook.sheet_by_name(sheet_name)
-    if sheet.cell(index, 13).value is not '':
-        ans = sheet.cell(index, 13).value
-    else:
-        ans = '该问题正在讨论中...'
-    return ans
+    print('step4：通过索引从qa-clean-data中查询对应的相似问题及答案...', index)
+    with open(filePath, 'r', encoding='utf-8') as csvfile:
+        read = csv.reader(csvfile)
+        id = 0
+        for i in read:
+            id += 1
+            if id == index:
+                simQuestion = i[0]
+                ans = i[1]
+    return simQuestion, ans
 
 
 if __name__ == '__main__':
-    # print('START------111111111111111111')
+    print('开始查询问题--->')
     # testQ = '老师们，我在一线的时候总有一个问题，如何能够提高小组讨论的有效性？！如何避免讨论后小组派代表没人愿意说？或者一讨论学生们就聊别的这一问题呢？'
     # testQ = '上课注意力不集中怎么办？'
-    testQ = '如何提高学生表达能力'
-    # testQ = '学生们要面对学业上的压力，家长该秉持怎样的育人理念，才能培养孩子养成良好的学习、生活习惯'
+    # testQ = '如何提高学生上课注意力'
+    # testQ = '学生沉迷游戏怎么办？'
+    testQ = '学生爱睡觉怎么办?'
     getBestAnswer(testQ)
