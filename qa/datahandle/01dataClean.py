@@ -1,13 +1,17 @@
 #!/usr/bin/env python
 # _*_ coding:utf-8 _*_
-
-# 数据清理,为了提高推荐答案的质量,清除错误答案及无效问题
 import csv
 import re
+
 import xlrd
 
 filePath = r'G:/tf-start/Implementation-of-Question-Answering-System/data/qa-all-data.xlsx'
 qa_cleandata_dir = r'G:/tf-start/Implementation-of-Question-Answering-System/data/qa-clean-data.csv'
+
+'''
+数据清理,为了提高推荐答案的质量,清除错误答案及无效问题
+将qa-all-data.xlsx中的问题答案对数据提取出来进行清理,清理后保存在qa-clean-data.csv
+'''
 
 
 def manage_question(sheet):

@@ -11,34 +11,6 @@ path = os.path.abspath('..')
 filePath = path + '/data/qa-all-data.xlsx'
 
 
-def read_excel():
-    print('开始从excel文档中read data...')
-    workbook = xlrd.open_workbook(filePath)
-    sheet_name = workbook.sheet_names()[0]
-    sheet = workbook.sheet_by_name(sheet_name)
-    q_data = []  # 存放excel中获取的question 问题标题
-    for i in range(2, sheet.nrows):
-        if sheet.cell(i, 2).value is not '':
-            question = sheet.cell(i, 2).value
-        else:
-            question = sheet.cell(i, 1).value
-        # ansName = sheet.cell(i, 9)  # 存放excel中的 回答者name
-        q_data.append(question)
-    return q_data
-
-
-def bertconvert(datas):
-    question_list = []
-    bc = BertClient()
-    print(len(datas))
-    for i in range(0, len(datas)):
-        data = datas[i]
-        newdata = "".join(data.split())  # data.replace(' ', '')
-        question_list.append(newdata)
-    ss = bc.encode(question_list)
-    np.save(path + "/data/question2vec1.npy", ss)
-
-
 #  1默认问题答案匹配方案,通过生成的向量间余弦相似度比较,得到最相似的问题,再得到对应答案
 def getBestAnswer(qdata):
     b = np.load(path + "/data/question2vec1.npy")
@@ -104,7 +76,7 @@ def getAnsByIndex(index):
 def getBestAnswer2bySimilyQuestionByq2qModel(qdata):
     datapath = os.path.abspath('..')
     b = np.load(datapath + "/data/question2vec1.npy")
-    print('step 3:load question vector form qa-all-data.xlsx success!!!!!!!!!', len(b))
+    print('step 3:load question vector form question2vec1 success!!!!!!!!!', len(b))
     bc = BertClient()
     testvec = bc.encode(["".join(qdata.split())])
     print('step4: cal cosine_similarity by q2q mlp model')
@@ -163,14 +135,10 @@ def getBestAnswer3bySimilyQuestionByQ2QandQ2AModel(qdata):
 
 if __name__ == '__main__':
     # print('START------111111111111111111')
-    is_exist_bertvector = True
-    if is_exist_bertvector is False:
-        q_data = read_excel()
-        bertconvert(q_data)
     # testQ = '老师们，我在一线的时候总有一个问题，如何能够提高小组讨论的有效性？！如何避免讨论后小组派代表没人愿意说？或者一讨论学生们就聊别的这一问题呢？'
     # testQ = '上课注意力不集中怎么办？'
     testQ = '如何提高学生表达能力'
     # testQ = '学生们要面对学业上的压力，家长该秉持怎样的育人理念，才能培养孩子养成良好的学习、生活习惯'
-    # getBestAnswer(testQ)
-    getBestAnswer2bySimilyQuestionByq2qModel(testQ)
+    getBestAnswer(testQ)
+    # getBestAnswer2bySimilyQuestionByq2qModel(testQ)
     # getBestAnswer3bySimilyQuestionByQ2QandQ2AModel(testQ)

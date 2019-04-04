@@ -5,29 +5,26 @@ import numpy as np
 from bert_serving.client import BertClient
 import os
 
-### 训练问题到答案的MLP模型 通过数据集qa-all-data
-#  /data/X_qa_all_data.npy文件保存AllquestAnsWroA.csv通过bert encode后的结果,用于train q2a model
+'''
+训练问题-答案的MLP模型 通过数据集X_qa_all_data Y_qa_all_data
+为AllquestAnsWroA.csv通过bert encode后的结果
+共2969*2=5938条数据
+'''
+
 X = np.load(os.path.abspath('..') + '/data/X_qa_all_data.npy')
 Y = np.load(os.path.abspath('..') + '/data/Y_qa_all_data.npy')
 Y_label = np.array([Y, -(Y - 1)]).T
-print(X.shape, Y_label.shape)
+print('导入问题-答案训练数据成功', X.shape, Y_label.shape)
 
-for i in range(len(X)):
-    if len(X[i]) == 0:
-        print(i)
-    # print(np.array(i).shape)
-X.reshape(10000, 1536)
-print(X.shape)
-
-X_train, X_test = X[0:10000], X[8000:]
-Y_train, Y_test = Y_label[0:10000], Y_label[8000:]
+X_train, X_test = X[0:5938], X[5000:]
+Y_train, Y_test = Y_label[0:5938], Y_label[5000:]
 print(X[0], Y[0])
 print(X_train, Y_train)
 print(X_test.shape, Y_test.shape)
 tf.reset_default_graph()
 # Parameters
 learning_rate = 0.001
-training_epochs = 400
+training_epochs = 600
 batch_size = 100
 display_step = 10
 

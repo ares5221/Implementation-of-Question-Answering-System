@@ -1,64 +1,21 @@
 #!/usr/bin/env python
 # _*_ coding:utf-8 _*_
-# 通过清理后的qa-clean-data.csv 构建question answer wronganswer数据集
+import numpy as np
+from bert_serving.client import BertClient
 import csv
 import random
 import xlrd
 import os
 
+'''
+1,通过清理后的qa-clean-data.csv 构建question answer wronganswer数据集
+构建的数据集保存在/data/AllquestAnsWroA.csv,通过该数据训练question2questionModel
+2,通过清理后的数据集中的问题来构建question2vec将问题信息通过bert转化为向量,便于比较
+3,通过清理后的数据集中的问题来构建answer2vec将问题信息通过bert转化为向量,便于比较
+'''
+
 path = os.path.abspath('../..')
 filePath = path + '/data/qa-clean-data.csv'
-
-
-def get_question():
-    print('开始从excel文档中get question...')
-    workbook = xlrd.open_workbook(filePath)
-    sheet_name = workbook.sheet_names()[0]
-    sheet = workbook.sheet_by_name(sheet_name)
-
-    q_data = []
-    q_set = set()
-    for i in range(2, sheet.nrows):
-        if sheet.cell(i, 2).value is not '':
-            question = sheet.cell(i, 2).value
-            question = ''.join(question.split())
-        else:
-            question = sheet.cell(i, 1).value
-            question = ''.join(question.split())
-        # print(i-1, question)
-        if sheet.cell(i, 13).value is not '':
-            if question not in q_set:
-                q_set.add(question)
-                q_data.append(question)
-                # print(question)
-    return q_data
-
-#useless code
-def get_ans(data):
-    print(len(data))
-    workbook = xlrd.open_workbook(filePath)
-    sheet_name = workbook.sheet_names()[0]
-    sheet = workbook.sheet_by_name(sheet_name)
-    answers = ['' for i in range(636)]
-    for i in range(len(data)):
-        count = 0
-        ans = ''
-        for j in range(2, sheet.nrows):
-            qq = ''.join(sheet.cell(j, 2).value.split())
-            if qq == '':
-                qq = ''.join(sheet.cell(j, 1).value.split())
-            if data[i] == qq:
-                answer = sheet.cell(j, 13).value
-                count += 1
-                if len(answer) > len(ans):
-                    ans = answer
-                    answers[i] = ans
-        print('sss', data[i], '---------------------', answers[i])
-        wrongAns = '该问题正在讨论中。。。。'
-        with open("questAns.csv", "a", newline='', encoding='utf-8') as csvfile:
-            writer = csv.writer(csvfile)
-            ww = [data[i], answers[i], wrongAns]
-            writer.writerow(ww)
 
 
 def get_AllquestAnsWroA():
@@ -73,16 +30,73 @@ def get_AllquestAnsWroA():
     with open(filePath, 'r', encoding='utf-8') as csvfile:
         read = csv.reader(csvfile)
         for i in read:
-            print(i[0], i[1])
-            ranIndex = random.randint(0, len(allAns)-1)
+            ranIndex = random.randint(0, len(allAns) - 1)
             wroAns = allAns[ranIndex]
             allQAA = [i[0], i[1], wroAns]
-            with open(path + "/data/AllquestAnsWroA1.csv", "a", newline='', encoding='utf-8') as csvfile:
+            with open(path + "/data/AllquestAnsWroA.csv", "a", newline='', encoding='utf-8') as csvfile:
                 writer = csv.writer(csvfile)
                 writer.writerow(allQAA)
-        print('全部的问题/答案/错误答案数据已经保存完毕')
+        print('------->全部的问题/答案/错误答案数据已经保存完毕')
+
+
+def getQAquestion():
+    print('开始从qa-clean-data.csv中读取question data...')
+    q_data = []  # 存放excel中获取的question 问题标题
+    with open(filePath, 'r', encoding='utf-8') as csvfile:
+        read = csv.reader(csvfile)
+        for i in read:
+            q_data.append(i[0])
+    print('获取到', len(q_data), '条问题')
+    return q_data
+
+
+def bertconvert(datas):
+    question_list = []
+    bc = BertClient()
+    for i in range(0, len(datas)):
+        data = datas[i]
+        newdata = "".join(data.split())  # data.replace(' ', '')
+        question_list.append(newdata)
+    ss = bc.encode(question_list)
+    np.save(path + "/data/question2vec1.npy", ss)
+
+
+def getQAanswer():
+    print('开始从qa-clean-data.csv中读取answer data...')
+    a_data = []  # 存放excel中获取的question 问题标题
+    with open(filePath, 'r', encoding='utf-8') as csvfile:
+        read = csv.reader(csvfile)
+        for i in read:
+            a_data.append(i[1])
+    print('获取到', len(a_data), '条答案')
+    return a_data
+
+
+def bertconvert2(datas):
+    answer_list = []
+    bc = BertClient()
+    for i in range(0, len(datas)):
+        data = datas[i]
+        newdata = "".join(data.split())
+        answer_list.append(newdata)
+    ss = bc.encode(answer_list)
+    np.save(path + "/data/answer2vec.npy", ss)
 
 
 if __name__ == '__main__':
-    get_AllquestAnsWroA()
-    print(path)
+    print('Task1 构建数据集AllquestAnsWroA.csv')
+    if 1 == 0:
+        get_AllquestAnsWroA()
+    print('Task1 Finish OK--->')
+
+    print('Task2 构建数据集question2vec1.npy')
+    if 1 == 0:
+        data = getQAquestion()
+        bertconvert(data)
+    print('Task2 Finish OK--->')
+
+    print('Task3 构建数据集answer2vec.npy')
+    if 1 == 0:
+        data = getQAanswer()
+        bertconvert2(data)
+    print('Task3 Finish OK--->')
