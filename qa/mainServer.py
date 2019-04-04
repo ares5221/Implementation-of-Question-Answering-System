@@ -5,8 +5,8 @@ import json
 from aiohttp import web
 import asyncio
 from bertClient import getBestAnswer
-from bertClient import getBestAnswer2bySimilyQuestionByq2qModel
-from bertClient import getBestAnswer3bySimilyQuestionByQ2QandQ2AModel
+from bertClientRun2 import getBestAnswer2bySimilyQuestionByq2qModel
+from bertClientRun3 import getBestAnswer3bySimilyQuestionByQ2QandQ2AModel
 import time, os, csv
 
 path = os.path.abspath('..')

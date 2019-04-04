@@ -10,15 +10,17 @@ import os
 path1 = os.path.abspath('.')   #表示当前所处的文件夹的绝对路径
 path2 = os.path.abspath('..')
 print(path1)
+X = np.load(os.path.abspath('..') +'/data/X_qa_all_data.npy')
+Y = np.load(os.path.abspath('..') +'/data/Y_qa_all_data.npy') #为了展示项目
+X = np.load("G:/tf-start/Implementation-of-Question-Answering-System/models/mlp/X_labelmark15000.npy")
+Y = np.load("G:/tf-start/Implementation-of-Question-Answering-System/models/mlp/Y_labelmark15000.npy")
 '''
 
 X = np.load(os.path.abspath('..') + '/data/X_atec_50000.npy')
 Y = np.load(os.path.abspath('..') + '/data/Y_atec_50000.npy')
-# X = np.load(os.path.abspath('..') +'/data/X_qa_all_data.npy')
-# Y = np.load(os.path.abspath('..') +'/data/Y_qa_all_data.npy') #为了展示项目
-# X = np.load("G:/tf-start/Implementation-of-Question-Answering-System/models/mlp/X_labelmark15000.npy")
-# Y = np.load("G:/tf-start/Implementation-of-Question-Answering-System/models/mlp/Y_labelmark15000.npy")
 Y_label = np.array([Y, -(Y - 1)]).T
+print('导入问题-问题训练数据成功', X.shape, Y_label.shape)
+
 print(X.shape, Y_label.shape)
 X_train, X_test = X[0:48000], X[2000:]
 Y_train, Y_test = Y_label[0:48000], Y_label[2000:]
