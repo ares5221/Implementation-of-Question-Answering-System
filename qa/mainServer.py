@@ -18,11 +18,12 @@ async def handle(request):
     question = varDict['question']
     print('从url解析得到的查询问题信息：', question)
     # 方法一,比较余弦相似度查找相似问题
-    res1, res2 = getBestAnswer(question)
-    ss = {'res1': res1, 'res2': res2}
+    # res1, res2 = getBestAnswer(question)
+    # ss = {'res1': res1, 'res2': res2}
     # data = json.dumps(ss, ensure_ascii=False)
     # # 方法二, 通过MLP比较查找相似问题
-    # res = getBestAnswer2bySimilyQuestionByq2qModel(question)
+    res1, res2 = getBestAnswer2bySimilyQuestionByq2qModel(question)
+    ss = {'res1': res1, 'res2': res2}
     # 方法三, 通过MLP比较查找相似问题和对应的答案
     # res = getBestAnswer3bySimilyQuestionByQ2QandQ2AModel(question)
     print('本次咨询结束，当前时间为：', time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))

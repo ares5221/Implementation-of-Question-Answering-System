@@ -52,13 +52,13 @@ def calSimilarityByq2qModel(q1vec, q2vec):
         '''
         从问答数据中选取5个语义最相似的问题作为候选问题
         '''
-        maxsimil, index = 0, 0
+        # maxsimil, index = 0, 0
         simlist, idlist = [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]
         for i in range(len(q1vec)):
             testbatch = [[] for i in range(1)]
             testbatch[0] = np.append(q1vec[i], q2vec).tolist()
             res = sess.run(pred, feed_dict={x: testbatch})[0][0]
-            print(res, i)
+            # print(res, i)
             if res > min(simlist):
                 simlist[simlist.index(min(simlist))] = res
                 idlist[simlist.index(min(simlist))] = i
@@ -78,11 +78,12 @@ def calSimilarityByq2qModel(q1vec, q2vec):
         print('问题相似度:', simlist)
         print('相似问题ID:', idlist)
     #############################################
-    return index, maxsimil
+    # return index, maxsimil
+    return idlist, simlist
 
 
 if __name__ == '__main__':
-    s1 = ['你好', '这是测试', '上课注意力不集中怎么办？']
+    s1 = ['你好', '测试测试', '上课注意力不集中怎么办？', '不爱学习', '不喜欢上课']
     s2 = '你好'
     bc = BertClient()
     source = bc.encode(s1)
