@@ -48,11 +48,11 @@ def getSimilaryQuestionByIndex(index):
 
 if __name__ == '__main__':
     print('开始查询相似问题--->')
-    # testQ = '老师们，我在一线的时候总有一个问题，如何能够提高小组讨论的有效性？！如何避免讨论后小组派代表没人愿意说？或者一讨论学生们就聊别的这一问题呢？'
-    # testQ = '注意力不集中怎么办？'
+    # testQ = '如何引导学生的恋爱问题，早恋需要过多关注吗'
+    # testQ = '如何帮助班级里的差生'
     # testQ = '如何让孩子喜欢学英语'
-    # testQ = '学生们要面对学业上的压力，家长该秉持怎样的育人理念，才能培养孩子养成良好的学习、生活习惯'
-    # testQ = '如何处理学生恋爱问题'
+    # testQ = '如何培养孩子养成良好的学习习惯'
+    testQ = '为什么孩子无心学习，不爱学习'
     # testQ = '如何防止孩子抄作业'
-    testQ = '孩子学习没有热情怎么办'
+    # testQ = '孩子学习没有热情怎么办'
     getBestAnswer2bySimilyQuestionByq2qModel(testQ)

@@ -71,4 +71,5 @@ if __name__ == '__main__':
     # testQ = '如何提高学生上课注意力'
     # testQ = '学生沉迷游戏怎么办？'
     testQ = '学生爱睡觉怎么办?'
+    testQ = '如何提高学习小组的讨论热情'
     getBestAnswer(testQ)
