@@ -9,7 +9,7 @@ path = os.path.abspath('../..')
 '''
 通过AllquestAnsWroA.csv数据构建用于trainQuestion2AnswerModel的数据
 生成的数据保存在X_qa_all_data.npy  Y_qa_all_data.npy
-导入2969条数据
+导入3291条数据 2019/4/15更新增加300条数据--log
 
 '''
 
@@ -26,12 +26,12 @@ def get_atecQuestAns():
 
 
 def getData():
-    datasize = 2969*2
+    datasize = 3291*2
     X = [[] for i in range(datasize)]
     Y = [0 for i in range(datasize)]
     data = get_atecQuestAns()
     bc = BertClient()
-    for index in range(0, 2969*2, 2):
+    for index in range(0, datasize, 2):
         tmp = data[int(index / 2)]
         # print(tmp[0], tmp[1], tmp[2])
         v1 = bc.encode([tmp[0]])

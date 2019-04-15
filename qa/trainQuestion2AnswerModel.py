@@ -8,7 +8,8 @@ import os
 '''
 训练问题-答案的MLP模型 通过数据集X_qa_all_data Y_qa_all_data
 为AllquestAnsWroA.csv通过bert encode后的结果
-共2969*2=5938条数据
+2969*2=5938       4/9
+3291*2=6582条数据 4/15 updata
 '''
 
 X = np.load(os.path.abspath('..') + '/data/X_qa_all_data.npy')
@@ -16,15 +17,15 @@ Y = np.load(os.path.abspath('..') + '/data/Y_qa_all_data.npy')
 Y_label = np.array([Y, -(Y - 1)]).T
 print('导入问题-答案训练数据成功', X.shape, Y_label.shape)
 
-X_train, X_test = X[0:5938], X[5000:]
-Y_train, Y_test = Y_label[0:5938], Y_label[5000:]
+X_train, X_test = X[0:6500], X[6500:]
+Y_train, Y_test = Y_label[0:6500], Y_label[6500:]
 print(X[0], Y[0])
 print(X_train, Y_train)
 print(X_test.shape, Y_test.shape)
 tf.reset_default_graph()
 # Parameters
 learning_rate = 0.001
-training_epochs = 600
+training_epochs = 800
 batch_size = 100
 display_step = 10
 
