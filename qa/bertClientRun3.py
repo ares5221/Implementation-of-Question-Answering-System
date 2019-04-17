@@ -47,7 +47,7 @@ def getBestAnswer3bySimilyQuestionByQ2QandQ2AModel(qdata):
     print('#######在问答数据中查找得到最佳答案的问题是---->', xx)
     print('问题是：', qdata)
     print('回答是：', bestAns)
-    return similaryQuestion, bestAns
+    return similaryQuestion, bestAns, xx
 
 
 
