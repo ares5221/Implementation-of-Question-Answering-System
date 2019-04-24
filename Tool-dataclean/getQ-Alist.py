@@ -174,7 +174,9 @@ if __name__ == '__main__':
     if not os.path.exists(qa_final_data_dir):  # 如果不存在
         save_finalQAdata(finalQAdata)
 
-    # todo将新的问题答案数据转换为向量保存
+    # todo问题需要question = "".join(question.split())
+    #         #     question = re.sub(r'^第.*周问题：', "", question)
+    # 将新的问题答案数据转换为向量保存
 
 
     print('data clean success!!!!!!!!!!!!!!!!')

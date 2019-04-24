@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31b9b70f-1d7c-490c-b31b-c384b40e6030" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Tool-dataclean/getQ-Alist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tools/doc2txt.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tool-doc2txt/doc2txt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tools/doc2txt2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tool-doc2txt/doc2txt2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tools/docxfile/1 “坏”孩子需要更多的爱和宽容.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Tool-doc2txt/docxfile/1 “坏”孩子需要更多的爱和宽容.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tools/docxfile/2 “浪子”回头金不换——谈后进生转化.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Tool-doc2txt/docxfile/2 “浪子”回头金不换——谈后进生转化.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/testLog2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/log/testLog2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-dataclean/getQ-Alist.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tool-dataclean/getQ-Alist.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,8 +122,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Tool-dataclean/getQ-Alist.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="419">
-                  <caret line="176" column="10" selection-start-line="176" selection-start-column="10" selection-end-line="176" selection-end-column="10" />
+                <state relative-caret-position="343">
+                  <caret line="176" column="14" selection-start-line="176" selection-start-column="14" selection-end-line="176" selection-end-column="14" />
                   <folding>
                     <element signature="e#131#137#0" expanded="true" />
                     <element signature="e#1126#1333#0" />
@@ -483,7 +477,7 @@
       <workItem from="1551767280179" duration="31179000" />
       <workItem from="1551950748214" duration="359564000" />
       <workItem from="1555659896343" duration="1652000" />
-      <workItem from="1556068680904" duration="19102000" />
+      <workItem from="1556068680904" duration="19260000" />
     </task>
     <servers />
   </component>
@@ -517,7 +511,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="414284000" />
+    <option name="totallyTimeSpent" value="414442000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -967,8 +961,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tool-dataclean/getQ-Alist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="176" column="10" selection-start-line="176" selection-start-column="10" selection-end-line="176" selection-end-column="10" />
+        <state relative-caret-position="343">
+          <caret line="176" column="14" selection-start-line="176" selection-start-column="14" selection-end-line="176" selection-end-column="14" />
           <folding>
             <element signature="e#131#137#0" expanded="true" />
             <element signature="e#1126#1333#0" />
