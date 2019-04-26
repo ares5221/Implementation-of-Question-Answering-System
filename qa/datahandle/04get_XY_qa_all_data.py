@@ -10,9 +10,10 @@ path = os.path.abspath('../..')
 通过AllquestAnsWroA.csv数据构建用于trainQuestion2AnswerModel的数据
 生成的数据保存在X_qa_all_data.npy  Y_qa_all_data.npy
 导入3291条数据 2019/4/15更新增加300条数据--log
-
+导入459条数据 2019/4/25更新增加300条数据--log
 '''
 
+data_num = 365
 
 def get_atecQuestAns():
     file_dir = path + '/data/AllquestAnsWroA.csv'
@@ -26,7 +27,7 @@ def get_atecQuestAns():
 
 
 def getData():
-    datasize = 3291*2
+    datasize = data_num*2
     X = [[] for i in range(datasize)]
     Y = [0 for i in range(datasize)]
     data = get_atecQuestAns()

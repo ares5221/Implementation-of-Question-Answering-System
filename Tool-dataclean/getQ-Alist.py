@@ -15,25 +15,19 @@ path = os.path.abspath('..')
 filePath = path + '/data/qa-all-data.xlsx'
 q_ansall_list_data_dir = path + '/data/q-a-all-list-data.csv'
 qa_final_data_dir = path + '/data/qa-final-data.csv'
+qa_clean_data_new_dir = path + '/data/qa-clean-data425.csv'
 print(path)
 
 
 def manage_question(sheet):
     '''获取到所有问题的有序无重复列表'''
     que_set = set()  # 保存不重复的所有问题集合
-    questions = []   # 保存问题集合顺序列表
+    questions = []  # 保存问题集合顺序列表
     for i in range(2, sheet.nrows):
         if sheet.cell(i, 2).value is not '':
             question = sheet.cell(i, 2).value
-            # question = "".join(question.split())
-        #     question = re.sub(r'^第.*周问题：', "", question)
-        #     question = re.sub(r'^.*周问题：', "", question)
         else:
             question = sheet.cell(i, 1).value
-            # question = "".join(question.split())
-        #     question = re.sub(r'^第.*周问题：', "", question)
-        #     question = re.sub(r'^.*周问题：', "", question)
-
         if question not in que_set:
             que_set.add(question)
     # print(len(que_set), que_set)
@@ -46,14 +40,9 @@ def manage_question(sheet):
             # question = re.sub(r'^.*周问题：', "", question)
         else:
             question = sheet.cell(j, 1).value
-            # question = "".join(question.split())
-            # question = re.sub(r'^第.*周问题：', "", question)
-            # question = re.sub(r'^.*周问题：', "", question)
-
         if question in que_set:
             questions.append(question)
             que_set.remove(question)
-
     print(len(questions), questions)
     print('获取到所有问题的有序无重复列表 success')
     return questions
@@ -73,7 +62,7 @@ def manage_anslist(sheet, questions):
                     que_anslist[i][0] = sheet.cell(j, 1).value
                     que_anslist[i][1].append(get_ans_info(j))
 
-    print(len(que_anslist),'@@@@@@@@@@', que_anslist[1])
+    print(len(que_anslist), '@@@@@@@@@@', que_anslist[1])
     print('获取到所有问题及对应答案列表信息  success')
     return que_anslist
 
@@ -90,6 +79,11 @@ def ans_select(qa_list):
         que_ans_pair[i][0] = qa_list[i][0]
 
         anslist = qa_list[i][1]  # 每个问题的所有答案列表
+        # 0 有的答案为空，但是点赞数居然很高，可能是图片类信息没爬下来,将其点赞数直接置0
+        anslistlen = len(anslist)
+        for ii in range(0, anslistlen):
+            if anslist[ii][2] == '':
+                anslist[ii][3] = 0
 
         # 1比较点赞数
         max_thumbup_num = 0
@@ -101,10 +95,11 @@ def ans_select(qa_list):
             thumbup_num_int = int(thumbup_num_str)
 
             if thumbup_num_int > max_thumbup_num:
-                max_thumbup_num= thumbup_num_int
+                max_thumbup_num = thumbup_num_int
                 ans_index = j
         if max_thumbup_num > 0:
             que_ans_pair[i][1] = anslist[ans_index][2]
+
         # 2 比较答案长度
         if max_thumbup_num == 0:
             max_ans_length = 0
@@ -115,12 +110,8 @@ def ans_select(qa_list):
                     max_ans_length = ans_length
                     ans__length_index = k
             que_ans_pair[i][1] = anslist[ans__length_index][2]
-        # print(i,'%%%%%%%%%%%%',que_ans_pair[i][1])
     # print(len(que_ans_pair), que_ans_pair)
     return que_ans_pair
-
-
-
 
 
 def get_ans_info(index):
@@ -132,17 +123,6 @@ def get_ans_info(index):
     # print(anslist)
     return anslist
 
-    # if sheet.cell(i, 13).value is not '':
-    #     answer = sheet.cell(i, 13).value
-    #     answer = "".join(answer.split())
-    #     if len(answer) < 4:
-    #         continue
-    #     if re.match('老师您好', answer):
-    #         continue
-    #     if re.match('正在讨论', answer):
-    #         continue
-    # else:
-    #     continue
 
 def save_qaalllist(qa):
     for news in qa:
@@ -160,6 +140,36 @@ def save_finalQAdata(qa):
     print('处理后的问答对数据保存在qa_final_data.csv文件中!!!!!')
 
 
+def save_QAdata(qa):
+    for news in qa:
+        with open(qa_clean_data_new_dir, 'a', newline='', encoding='utf-8') as csvfile:
+            spamwriter = csv.writer(csvfile)
+            spamwriter.writerow(news)
+    print('处理后的问答对数据保存在qa_final_data.csv文件中!!!!!')
+
+
+def qalist_clean(qadata):
+    for i in range(len(qadata)):
+        if qadata[i][1] == '':
+            print(qadata[i])
+            qadata[i][1] = '该问题正在讨论中'
+
+    for i in range(len(qadata)):
+        qadata[i][0] = "".join(qadata[i][0].split())
+        qadata[i][0] = re.sub(r'^第.*周问题：', "", qadata[i][0])
+        qadata[i][0] = re.sub(r'^.*周问题：', "", qadata[i][0])
+        qadata[i][0] = re.sub(r'^.*模块：', "", qadata[i][0])
+
+        qadata[i][1] = "".join(qadata[i][1].split())
+        if re.match('老师您好', qadata[i][1]):
+            qadata[i][1] = '该问题正在讨论中'
+        if re.match('[图片]', qadata[i][1]):
+            qadata[i][1] = '该问题正在讨论中'
+
+        print(i, qadata[i])
+        if not os.path.exists(qa_clean_data_new_dir):  # 如果不存在
+            save_QAdata(qadata)
+
 
 if __name__ == '__main__':
     workbook = xlrd.open_workbook(filePath)
@@ -174,9 +184,7 @@ if __name__ == '__main__':
     if not os.path.exists(qa_final_data_dir):  # 如果不存在
         save_finalQAdata(finalQAdata)
 
-    # todo问题需要question = "".join(question.split())
-    #         #     question = re.sub(r'^第.*周问题：', "", question)
-    # 将新的问题答案数据转换为向量保存
-
+    print('将删选后的问答对数据保存在qa-clean-data425.csv')
+    qalist_clean(finalQAdata)
 
     print('data clean success!!!!!!!!!!!!!!!!')

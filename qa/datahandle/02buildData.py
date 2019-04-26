@@ -15,7 +15,7 @@ import os
 '''
 
 path = os.path.abspath('../..')
-filePath = path + '/data/qa-clean-data.csv'
+filePath = path + '/data/qa-clean-data425.csv'
 
 
 def get_AllquestAnsWroA():
@@ -85,18 +85,18 @@ def bertconvert2(datas):
 
 if __name__ == '__main__':
     print('Task1 构建数据集AllquestAnsWroA.csv')
-    if 1 == 0:
+    if 1 == 1:
         get_AllquestAnsWroA()
     print('Task1 Finish OK--->')
 
     print('Task2 构建数据集question2vec1.npy')
-    if 1 == 0:
+    if 1 == 1:
         data = getQAquestion()
         bertconvert(data)
     print('Task2 Finish OK--->')
 
     print('Task3 构建数据集answer2vec.npy')
-    if 1 == 0:
+    if 1 == 1:
         data = getQAanswer()
         bertconvert2(data)
     print('Task3 Finish OK--->')
