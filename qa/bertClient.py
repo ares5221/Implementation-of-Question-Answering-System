@@ -4,6 +4,7 @@ from bert_serving.client import BertClient
 import os
 import numpy as np
 import csv
+import timeit
 
 path = os.path.abspath('..')
 filePath = path + '/data/qa-clean-data425.csv'
@@ -15,6 +16,18 @@ filePath = path + '/data/qa-clean-data425.csv'
 '''
 
 
+def clock(func):
+    def clocked(*args):
+        t0 = timeit.default_timer()
+        result = func(*args)
+        elapsed = timeit.default_timer() - t0
+        name = func.__name__
+        print('该方法消耗时间情况如下：', '[%0.8fs] -> %s ' % (elapsed, name))
+        return result
+    return clocked
+
+
+@clock
 def getBestAnswer(qdata):
     b = np.load(path + "/data/question2vec1.npy")
     print('step1:导入问答数据中问题向量完成!!!,目前有效问题条数为:', len(b))
@@ -24,7 +37,6 @@ def getBestAnswer(qdata):
     maxsimil = 0
     for i in range(1, len(b) + 1):
         simil_test_ques = cosine_similarity(b[i - 1], testvec[0])
-        # print('##############',simil_test_ques)
         if simil_test_ques > maxsimil:
             maxsimil = simil_test_ques
             index = i
@@ -71,10 +83,10 @@ if __name__ == '__main__':
     print('开始查询相似问题--->')
     # testQ = '老师们，我在一线的时候总有一个问题，如何能够提高小组讨论的有效性？！如何避免讨论后小组派代表没人愿意说？或者一讨论学生们就聊别的这一问题呢？'
     # testQ = '上课注意力不集中怎么办？'
-    # testQ = '如何提高学生上课注意力'
+    testQ = '如何提高学生上课注意力'
     # testQ = '学生沉迷游戏怎么办？'
     # testQ = '学生爱睡觉怎么办?'
     # testQ = '如何阻止学生打架'
     # testQ = '如何提高学习小组的讨论热情'
-    testQ = '学生说谎该怎么处理更合适'
+    # testQ = '学生说谎该怎么处理更合适'
     getBestAnswer(testQ)

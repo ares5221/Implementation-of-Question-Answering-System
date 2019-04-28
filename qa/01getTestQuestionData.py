@@ -5,14 +5,16 @@ import csv
 from bertClientRun2 import getBestAnswer2bySimilyQuestionByq2qModel
 from bertClient import getBestAnswer
 from bertClientRun3 import getBestAnswer3bySimilyQuestionByQ2QandQ2AModel
+from bertClientPro import getBestAnswerByKDTree
 
 path = os.path.abspath('..')
-filePath = path + '/data/qa-clean-data.csv'
+filePath = path + '/data/qa-clean-data425.csv'
 save_log_dir = path + '/log/Fun2Log.csv'    # 随机选100个问题集中问题来测试方法三
 save_log_dir1 = path + '/log/Fun1Log.csv'   # 随机选100个问题集中问题来测试用方法一
 save_log_dir2 = path + '/log/testLog.csv'   # 用方法三余弦比较问题相似度获取相似问题后用MLP比较五个答案中合适的答案其对应的问题作为相似问题输出
 save_log_dir3 = path + '/log/testLog1.csv'  # 用方法一余弦比较问题相似度获取相似问题
 save_log_dir4 = path + '/log/testLog2.csv'  # 用方法三测试，输出问题，获取的相似问题，对应的答案
+save_log_dir5 = path + '/log/testLog5.csv'  # 用BallTree，输出问题，获取的相似问题，对应的答案
 def getTestQ():
     qdata = []
     with open(filePath, 'r', encoding='utf-8') as csvfile:
@@ -154,9 +156,10 @@ if __name__ == '__main__':
         ss = testdata[i]
         # res1, res2 = getBestAnswer2bySimilyQuestionByq2qModel(ss)
         # res1, res2 = getBestAnswer(ss)
-        res1, res2, res3 = getBestAnswer3bySimilyQuestionByQ2QandQ2AModel(ss)
-        news = [ss, res1, res2, res3]   # 问题，获取的相似问题，mlp后合适的答案， 合适答案对应的问题
-        with open(save_log_dir4, 'a', newline='', encoding='utf-8') as csvfile:
+        res1, res2 = getBestAnswerByKDTree(ss)
+        # res1, res2, res3 = getBestAnswer3bySimilyQuestionByQ2QandQ2AModel(ss)
+        news = [ss, res1, res2]   # 问题，获取的相似问题，mlp后合适的答案， 合适答案对应的问题
+        with open(save_log_dir5, 'a', newline='', encoding='utf-8') as csvfile:
             spamwriter = csv.writer(csvfile)
             spamwriter.writerow(news)
     print('测试问题与相似问题已经保存在log文件中!!!!!')
