@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31b9b70f-1d7c-490c-b31b-c384b40e6030" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Tool-doc2txt/SegSentences.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qa/01getTestQuestionData.py" beforeDir="false" afterPath="$PROJECT_DIR$/qa/01getTestQuestionData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/doc2txt.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tool-doc2txt/docx2txt.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qa/bertClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/qa/bertClient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qa/bertClientPro.py" beforeDir="false" afterPath="$PROJECT_DIR$/qa/bertClientPro.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qa/bertClientRun3.py" beforeDir="false" afterPath="$PROJECT_DIR$/qa/bertClientRun3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qa/ckptque2ans/mlp.ckpt-796.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/qa/ckptque2ans/mlp.ckpt-796.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qa/ckptque2ans/mlp.ckpt-796.index" beforeDir="false" afterPath="$PROJECT_DIR$/qa/ckptque2ans/mlp.ckpt-796.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qa/ckptque2ans/mlp.ckpt-797.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/qa/ckptque2ans/mlp.ckpt-797.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qa/ckptque2ans/mlp.ckpt-797.index" beforeDir="false" afterPath="$PROJECT_DIR$/qa/ckptque2ans/mlp.ckpt-797.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qa/ckptque2ans/mlp.ckpt-798.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/qa/ckptque2ans/mlp.ckpt-798.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qa/ckptque2ans/mlp.ckpt-798.index" beforeDir="false" afterPath="$PROJECT_DIR$/qa/ckptque2ans/mlp.ckpt-798.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qa/ckptque2ans/mlp.ckpt-799.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/qa/ckptque2ans/mlp.ckpt-799.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qa/ckptque2ans/mlp.ckpt-799.index" beforeDir="false" afterPath="$PROJECT_DIR$/qa/ckptque2ans/mlp.ckpt-799.index" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +25,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$MLP.coverage" NAME="MLP Coverage Results" MODIFIED="1552013345813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$mainServer.coverage" NAME="mainServer Coverage Results" MODIFIED="1554704738928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
-    <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$trainQuestion2AnswerModel.coverage" NAME="trainQuestion2AnswerModel Coverage Results" MODIFIED="1555293519155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
+    <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$trainQuestion2AnswerModel.coverage" NAME="trainQuestion2AnswerModel Coverage Results" MODIFIED="1556434181405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$doc2txt2.coverage" NAME="doc2txt2 Coverage Results" MODIFIED="1555468443239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models/doc2txt" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$bertClient.coverage" NAME="bertClient Coverage Results" MODIFIED="1556418063371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$pytest_in_bertClient_py.coverage" NAME="pytest in bertClient.py Coverage Results" MODIFIED="1551767213114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
@@ -43,6 +52,7 @@
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$testMatchQuestion.coverage" NAME="testMatchQuestion Coverage Results" MODIFIED="1554366788723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$bertClientRun2.coverage" NAME="bertClientRun2 Coverage Results" MODIFIED="1554794896255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$doc2txt.coverage" NAME="doc2txt Coverage Results" MODIFIED="1555482069210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models/doc2txt" />
+    <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$docx2txt.coverage" NAME="docx2txt Coverage Results" MODIFIED="1556432424138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool-doc2txt" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$testmodel.coverage" NAME="testmodel Coverage Results" MODIFIED="1552977844637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$buildQQ1Q2Data.coverage" NAME="buildQQ1Q2Data Coverage Results" MODIFIED="1552556485753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$pytest_for_testMatchQuestion_testBERTEncode.coverage" NAME="pytest for testMatchQuestion.testBERTEncode Coverage Results" MODIFIED="1554109801566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
@@ -52,106 +62,101 @@
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$02buildData.coverage" NAME="02buildData Coverage Results" MODIFIED="1556261194836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa/datahandle" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$01getTestQuestionData.coverage" NAME="01getTestQuestionData Coverage Results" MODIFIED="1556273543172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$pytest_in_testMatchQuestion_py.coverage" NAME="pytest in testMatchQuestion.py Coverage Results" MODIFIED="1552013900988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
-    <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$bertClientRun3.coverage" NAME="bertClientRun3 Coverage Results" MODIFIED="1555300751808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
+    <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$bertClientRun3.coverage" NAME="bertClientRun3 Coverage Results" MODIFIED="1556434287583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$get_XY_atec_data.coverage" NAME="get_XY_atec_data Coverage Results" MODIFIED="1553053097148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa/datahandle" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$doc2txt__2_.coverage" NAME="doc2txt (2) Coverage Results" MODIFIED="1556070798110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool-doc2txt" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$03get_XY_atec_data.coverage" NAME="03get_XY_atec_data Coverage Results" MODIFIED="1554191699328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa/datahandle" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qa/bertClient.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="68" selection-start-line="68" selection-end-line="78" selection-end-column="27" />
-              <folding>
-                <element signature="e#45#87#0" expanded="true" />
-                <element signature="e#306#573#0" />
-                <element signature="e#317#1108#0" />
-                <element signature="e#1156#1476#0" />
-                <element signature="e#1882#2153#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/qa/bertClientPro.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="43" column="24" lean-forward="true" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
-              <folding>
-                <element signature="e#45#87#0" expanded="true" />
-                <element signature="e#396#663#0" />
-                <element signature="e#1523#1849#0" />
-                <element signature="e#1513#1958#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log/testLog5.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="380">
-              <caret line="29" column="18" selection-start-line="29" selection-end-line="29" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qa/datahandle/02buildData.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1007">
-              <caret line="59" column="32" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="32" />
-              <folding>
-                <element signature="e#45#63#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qa/datahandle/04get_XY_qa_all_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-              <folding>
-                <element signature="e#45#63#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/qa-clean-data425.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="6" selection-start-line="6" selection-end-line="6" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qa/01getTestQuestionData.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-57">
-              <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-              <folding>
-                <element signature="e#45#54#0" expanded="true" />
-                <element signature="e#1057#4296#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5528239">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/qa/bertClientRun2.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="209">
+                  <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+                  <folding>
+                    <element signature="e#45#55#0" expanded="true" />
+                    <element signature="e#1030#1356#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/qa/bertClientPro.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="304">
+                  <caret line="42" column="12" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="12" />
+                  <folding>
+                    <element signature="e#45#87#0" expanded="true" />
+                    <element signature="e#396#663#0" />
+                    <element signature="e#1523#1849#0" />
+                    <element signature="e#1513#1958#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/qa/bertClientRun3.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="209">
+                  <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+                  <folding>
+                    <element signature="e#45#87#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/qa/datahandle/02buildData.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-152">
+                  <caret line="59" column="32" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#45#63#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Tool-doc2txt/1.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="38">
+                  <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Tool-doc2txt/docx2txt.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="456">
+                  <caret line="26" selection-start-line="26" selection-end-line="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Tool-doc2txt/SegSentences.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="38">
+                  <caret line="2" selection-start-line="2" selection-end-line="2" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -162,8 +167,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>filePath</find>
-      <find>ansIndex</find>
       <find>cosine_similarity</find>
       <find>学生上课</find>
       <find>学生上课接话严重，怎么办</find>
@@ -192,6 +195,8 @@
       <find>metric</find>
       <find>DistanceMetric</find>
       <find>说谎</find>
+      <find>queryvec</find>
+      <find>filePath</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -200,8 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/qa/processQAData.py" />
         <option value="$PROJECT_DIR$/models/mlp/neural_net.py" />
         <option value="$PROJECT_DIR$/qa/processQ2Qdata.py" />
         <option value="$PROJECT_DIR$/models/mlp/test.py" />
@@ -241,7 +244,6 @@
         <option value="$PROJECT_DIR$/models/doc2txt/doc2txt.py" />
         <option value="$PROJECT_DIR$/Tools/doc2txt.py" />
         <option value="$PROJECT_DIR$/Tools/doc2txt2.py" />
-        <option value="$PROJECT_DIR$/qa/bertClientRun3.py" />
         <option value="$PROJECT_DIR$/Tool-dataclean/getQ-Alist.py" />
         <option value="$PROJECT_DIR$/qa/datahandle/02buildData.py" />
         <option value="$PROJECT_DIR$/qa/datahandle/04get_XY_qa_all_data.py" />
@@ -249,14 +251,17 @@
         <option value="$PROJECT_DIR$/qa/BSTSearch.py" />
         <option value="$PROJECT_DIR$/qa/binarySerach.py" />
         <option value="$PROJECT_DIR$/qa/01getTestQuestionData.py" />
-        <option value="$PROJECT_DIR$/qa/bertClient.py" />
         <option value="$PROJECT_DIR$/qa/bertClientPro.py" />
+        <option value="$PROJECT_DIR$/Tool-doc2txt/docx2txt.py" />
+        <option value="$PROJECT_DIR$/Tool-doc2txt/SegSentences.py" />
+        <option value="$PROJECT_DIR$/qa/bertClient.py" />
+        <option value="$PROJECT_DIR$/qa/bertClientRun3.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="631" />
-    <option name="y" value="50" />
+    <option name="x" value="99" />
+    <option name="y" value="39" />
     <option name="width" value="1812" />
     <option name="height" value="962" />
   </component>
@@ -294,6 +299,11 @@
               <item name="Implementation-of-Question-Answering-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Implementation-of-Question-Answering-System" type="462c0819:PsiDirectoryNode" />
               <item name="Tool-dataclean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Implementation-of-Question-Answering-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Implementation-of-Question-Answering-System" type="462c0819:PsiDirectoryNode" />
+              <item name="Tool-doc2txt" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -335,51 +345,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.bertClientPro">
-    <configuration name="01getTestQuestionData" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Implementation-of-Question-Answering-System" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/qa" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qa/01getTestQuestionData.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="BSTSearch" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Implementation-of-Question-Answering-System" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/qa" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qa/BSTSearch.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.bertClientRun3">
     <configuration name="bertClient" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Implementation-of-Question-Answering-System" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -424,7 +390,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="binarySerach" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="bertClientRun3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Implementation-of-Question-Answering-System" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -437,7 +403,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qa/binarySerach.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qa/bertClientRun3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docx2txt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Implementation-of-Question-Answering-System" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tool-doc2txt" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tool-doc2txt/docx2txt.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -468,21 +456,43 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="trainQuestion2AnswerModel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Implementation-of-Question-Answering-System" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/qa" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qa/trainQuestion2AnswerModel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.testMatchQuestion" />
       <item itemvalue="Python.bertClient" />
       <item itemvalue="Python.bertClientPro" />
-      <item itemvalue="Python.BSTSearch" />
-      <item itemvalue="Python.binarySerach" />
-      <item itemvalue="Python.01getTestQuestionData" />
+      <item itemvalue="Python.docx2txt" />
+      <item itemvalue="Python.bertClientRun3" />
+      <item itemvalue="Python.trainQuestion2AnswerModel" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.bertClientRun3" />
+        <item itemvalue="Python.trainQuestion2AnswerModel" />
+        <item itemvalue="Python.docx2txt" />
         <item itemvalue="Python.bertClientPro" />
         <item itemvalue="Python.bertClient" />
-        <item itemvalue="Python.01getTestQuestionData" />
-        <item itemvalue="Python.binarySerach" />
-        <item itemvalue="Python.BSTSearch" />
       </list>
     </recent_temporary>
   </component>
@@ -500,7 +510,7 @@
       <workItem from="1551767280179" duration="31179000" />
       <workItem from="1551950748214" duration="359564000" />
       <workItem from="1555659896343" duration="1652000" />
-      <workItem from="1556068680904" duration="74881000" />
+      <workItem from="1556068680904" duration="78898000" />
     </task>
     <servers />
   </component>
@@ -534,7 +544,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="470063000" />
+    <option name="totallyTimeSpent" value="474080000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -546,7 +556,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="631" y="50" width="1812" height="962" extended-state="0" />
+    <frame x="99" y="39" width="1812" height="962" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14098173" />
@@ -587,26 +597,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/mlp/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-          <folding>
-            <element signature="e#1#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qa/testMatchQuestion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#45#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qa/__init__.py" />
     <entry file="file://$PROJECT_DIR$/qa/trainQuestion2QuestionModel.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -619,16 +609,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/log/resultLog.csv" />
-    <entry file="file://$PROJECT_DIR$/qa/trainQuestion2AnswerModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="e#45#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qa/getAnswerByq2aModel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
@@ -656,16 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
           <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tool-doc2txt/doc2txt2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding>
-            <element signature="e#97#130#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -728,24 +698,6 @@
           <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
           <folding>
             <element signature="e#45#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tool-doc2txt/doc2txt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qa/bertClientRun2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-          <folding>
-            <element signature="e#45#55#0" expanded="true" />
-            <element signature="e#1030#1356#0" />
           </folding>
         </state>
       </provider>
@@ -864,16 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qa/bertClientRun3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
-          <folding>
-            <element signature="e#45#87#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qa/datahandle/buildQuestionData.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
@@ -942,19 +884,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/qa-clean-data425.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="6" selection-start-line="6" selection-end-line="6" selection-end-column="6" />
+    <entry file="file://$PROJECT_DIR$/Tool-doc2txt/doc2txt2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/qa/01getTestQuestionData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
+        <state relative-caret-position="-95">
           <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding>
             <element signature="e#45#54#0" expanded="true" />
@@ -965,7 +904,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qa/datahandle/04get_XY_qa_all_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
+        <state relative-caret-position="-38">
           <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
           <folding>
             <element signature="e#45#63#0" expanded="true" />
@@ -975,7 +914,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qa/datahandle/02buildData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1007">
+        <state relative-caret-position="-152">
           <caret line="59" column="32" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="32" />
           <folding>
             <element signature="e#45#63#0" expanded="true" />
@@ -983,29 +922,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Tool-doc2txt/SegSentences.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tool-doc2txt/docx2txt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/qa-clean-data425.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-5016">
+          <caret line="6" column="6" selection-start-line="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tool-doc2txt/1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qa/trainQuestion2AnswerModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="37" column="46" lean-forward="true" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+          <folding>
+            <element signature="e#45#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/qa/bertClient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="68" selection-start-line="68" selection-end-line="78" selection-end-column="27" />
+        <state relative-caret-position="-304">
+          <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
           <folding>
             <element signature="e#45#87#0" expanded="true" />
-            <element signature="e#306#573#0" />
-            <element signature="e#317#1108#0" />
-            <element signature="e#1156#1476#0" />
-            <element signature="e#1882#2153#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qa/bertClientRun2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+          <folding>
+            <element signature="e#45#55#0" expanded="true" />
+            <element signature="e#1030#1356#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/qa/bertClientPro.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="43" column="24" lean-forward="true" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+        <state relative-caret-position="304">
+          <caret line="42" column="12" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="12" />
           <folding>
             <element signature="e#45#87#0" expanded="true" />
             <element signature="e#396#663#0" />
             <element signature="e#1523#1849#0" />
             <element signature="e#1513#1958#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qa/bertClientRun3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#45#87#0" expanded="true" />
           </folding>
         </state>
       </provider>

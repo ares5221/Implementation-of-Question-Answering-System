@@ -24,6 +24,7 @@ def Translate(path):
             for paragraph in document.paragraphs:
                 # print(paragraph.text)     # 打印各段落内容文本
                 savename = filename + '.txt'  # 将docx文件序号作为保存txt文件的文件名
+
                 with open(savename, 'a', encoding='utf-8') as ff:
                     ff.write(paragraph.text)
                     ff.write('\n')

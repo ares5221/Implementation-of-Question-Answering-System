@@ -24,6 +24,7 @@ def clock(func):
         name = func.__name__
         print('该方法消耗时间情况如下：', '[%0.8fs] -> %s ' % (elapsed, name))
         return result
+
     return clocked
 
 
