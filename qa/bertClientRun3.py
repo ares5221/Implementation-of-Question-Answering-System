@@ -8,6 +8,8 @@ from bertClient import getSimilaryQuestionByIndex
 from getAnswerByq2aModel import getAnswerByq2aModel
 
 path = os.path.abspath('..')
+
+
 # filePath = path + '/data/qa-all-data.xlsx'
 
 
@@ -45,7 +47,6 @@ def getBestAnswer3bySimilyQuestionByQ2QandQ2AModel(qdata):
     print('问题是：', qdata)
     print('回答是：', bestAns)
     return similaryQuestion, bestAns, xx
-
 
 
 if __name__ == '__main__':
