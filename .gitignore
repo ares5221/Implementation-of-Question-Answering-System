@@ -1,6 +1,9 @@
 #ignore some file in data/  & useless code
 /data/*
 /models/*
+/Tool-doc2txt/docxfile-part1/*
+/Tool-doc2txt/docxfile-part2/*
+/Tool-doc2txt/txtfiles/*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -5,7 +5,9 @@ from docx import Document
 import re
 
 '''将一个目录下所有docx文件转成txt,文件名用docx中的数字序号，生成一个对应的空的ann文件'''
-mypath = os.path.abspath('./docxfile')
+path1 = os.path.abspath('./docxfile-part1')
+path2 = os.path.abspath('./docxfile-part2')
+
 all_FileNum = 0
 
 
@@ -20,11 +22,12 @@ def Translate(path):
         if filepath[-5:] == '.docx':
             print(f)
             filename = re.sub("\D", "", f)
+            filename = int(filename) + 174  # part1中包含174篇文档part2从175开始
+            filename = str(filename)
             document = Document(filepath)  # 打开docx文件
             for paragraph in document.paragraphs:
                 # print(paragraph.text)     # 打印各段落内容文本
                 savename = filename + '.txt'  # 将docx文件序号作为保存txt文件的文件名
-
                 with open(savename, 'a', encoding='utf-8') as ff:
                     ff.write(paragraph.text)
                     ff.write('\n')
@@ -35,5 +38,6 @@ def Translate(path):
 
 
 if __name__ == '__main__':
-    Translate(mypath)
+    # Translate(path1)
+    Translate(path2)
     print('文件夹中文件转换完毕，文件总数 = ', all_FileNum)

@@ -1,16 +1,20 @@
 #!/usr/bin/env python
 # _*_ coding:utf-8 _*_
 import os
-from docx import Document
 import re
 
-'''将一个目录下所有txt文件中句子中的。后面加一个换行符号，段之间加一个换行符号'''
 mypath = os.path.abspath('./txtfiles')
 workpath = os.path.abspath('./worktxtfiles/')
 all_FileNum = 0
 
 
 def Translate(path):
+    '''
+    将一个目录下所有txt文件中按句号断句。
+    段之间加一个换行符号相隔两行，句子中的。后面加一个换行符号。
+    :param path: 待处理的文件夹
+    :return:
+    '''
     global all_FileNum
     files = os.listdir(path)  # 该目录下所有文件的名字
     for f in files:
