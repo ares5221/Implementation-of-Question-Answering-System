@@ -22,8 +22,8 @@ def Translate(path):
         if filepath[-5:] == '.docx':
             print(f)
             filename = re.sub("\D", "", f)
-            filename = int(filename) + 174  # part1中包含174篇文档part2从175开始
-            filename = str(filename)
+            # filename = int(filename) + 174  # part1中包含174篇文档part2从175开始
+            # filename = str(filename)
             document = Document(filepath)  # 打开docx文件
             for paragraph in document.paragraphs:
                 # print(paragraph.text)     # 打印各段落内容文本
@@ -31,13 +31,13 @@ def Translate(path):
                 with open(savename, 'a', encoding='utf-8') as ff:
                     ff.write(paragraph.text)
                     ff.write('\n')
-                # annname = filename + '.ann'  # 生成对应的空.ann文件
-                # with open(annname, 'a', encoding='utf-8') as ff:
-                #     ff.write('')
+                annname = filename + '.ann'  # 生成对应的空.ann文件
+                with open(annname, 'a', encoding='utf-8') as ff:
+                    ff.write('')
             all_FileNum += 1
 
 
 if __name__ == '__main__':
-    # Translate(path1)
-    Translate(path2)
+    Translate(path1)
+    # Translate(path2)
     print('文件夹中文件转换完毕，文件总数 = ', all_FileNum)

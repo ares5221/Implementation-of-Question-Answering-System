@@ -40,7 +40,7 @@ def getData():
         v3 = bc.encode([tmp[2]])
         qq1_vec = np.append(v1, v2)
         qq2_vec = np.append(v1, v3)
-        # print(qq2_vec)
+        print(qq2_vec)
         X[index] = qq1_vec.tolist()
         X[index + 1] = qq2_vec.tolist()
         Y[index] = 1
