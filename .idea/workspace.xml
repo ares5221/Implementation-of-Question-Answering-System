@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31b9b70f-1d7c-490c-b31b-c384b40e6030" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/toxuqi-part1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/txt2docx.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tool-doc2txt/txt2docx.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,8 +79,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Tool-doc2txt/docx2txt.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="431">
-                  <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+                <state relative-caret-position="412">
+                  <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
                   <folding>
                     <element signature="e#45#54#0" expanded="true" />
                   </folding>
@@ -95,8 +95,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Tool-doc2txt/txt2docx.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="456">
-                  <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+                <state relative-caret-position="-336">
+                  <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
                   <folding>
                     <element signature="e#45#54#0" expanded="true" />
                   </folding>
@@ -229,16 +229,6 @@
             <path>
               <item name="Implementation-of-Question-Answering-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Implementation-of-Question-Answering-System" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Implementation-of-Question-Answering-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Implementation-of-Question-Answering-System" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Implementation-of-Question-Answering-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Implementation-of-Question-Answering-System" type="462c0819:PsiDirectoryNode" />
-              <item name="Tool-dataclean" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Implementation-of-Question-Answering-System" type="b2602c69:ProjectViewProjectNode" />
@@ -460,7 +450,7 @@
       <workItem from="1558518000857" duration="2719000" />
       <workItem from="1559550761230" duration="2540000" />
       <workItem from="1560819622909" duration="4858000" />
-      <workItem from="1561099222575" duration="7714000" />
+      <workItem from="1561099222575" duration="7972000" />
     </task>
     <servers />
   </component>
@@ -494,7 +484,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="526895000" />
+    <option name="totallyTimeSpent" value="527153000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -509,12 +499,12 @@
     <frame x="149" y="0" width="1608" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19315246" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19315246" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29901424" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29901424" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.307971" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -926,20 +916,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tool-doc2txt/txt2docx.py">
+    <entry file="file://$PROJECT_DIR$/Tool-doc2txt/docx2txt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="412">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
           <folding>
             <element signature="e#45#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tool-doc2txt/docx2txt.py">
+    <entry file="file://$PROJECT_DIR$/Tool-doc2txt/txt2docx.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        <state relative-caret-position="-336">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
           <folding>
             <element signature="e#45#54#0" expanded="true" />
           </folding>

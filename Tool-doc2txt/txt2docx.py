@@ -2,13 +2,16 @@
 # _*_ coding:utf-8 _*_
 import os
 from docx import Document
-from docx.shared import Inches,Pt
+from docx.shared import Inches, Pt
 from docx.oxml.ns import qn
+
 '''将一个目录下所有txx文件转成docx,文件名用txt中的name'''
 txtpath = os.path.abspath('./txtfolderFordocx')
 docxpath = os.path.abspath('./docxfolder/')
 
 all_FileNum = 0
+
+
 def Translate(path):
     global all_FileNum
     files = os.listdir(path)  # 该目录下所有文件的名字
@@ -37,7 +40,7 @@ def Translate(path):
             # ph_format.space_before = Pt(10)  # 设置段前间距
             # ph_format.space_after = Pt(12)  # 设置段后间距
             # ph_format.line_spacing = Pt(19)  # 设置行间距
-            all_FileNum +=1
+            all_FileNum += 1
 
 
 if __name__ == '__main__':
