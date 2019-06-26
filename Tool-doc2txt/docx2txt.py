@@ -31,9 +31,9 @@ def Translate(path):
                 with open(savename, 'a', encoding='utf-8') as ff:
                     ff.write(paragraph.text)
                     ff.write('\n')
-                annname = filename + '.ann'  # 生成对应的空.ann文件
-                with open(annname, 'a', encoding='utf-8') as ff:
-                    ff.write('')
+                # annname = filename + '.ann'  # 生成对应的空.ann文件
+                # with open(annname, 'a', encoding='utf-8') as ff:
+                #     ff.write('')
             all_FileNum += 1
 
 

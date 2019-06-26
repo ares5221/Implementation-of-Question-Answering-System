@@ -4,7 +4,7 @@ import os
 from docx import Document
 from docx.shared import Inches, Pt
 from docx.oxml.ns import qn
-
+import re
 '''将一个目录下所有txx文件转成docx,文件名用txt中的name'''
 txtpath = os.path.abspath('./txtfolderFordocx')
 docxpath = os.path.abspath('./docxfolder/')
@@ -22,8 +22,11 @@ def Translate(path):
         if filepath[-4:] == '.txt':
             filename = f[:-4]
             print(filename)
+            pattern_rule2 = re.compile(r'\n')
             with open(filepath, 'r', encoding='utf-8') as ff:  # 读取txt中内容
                 txtcontent = ff.read()
+                print('title-----------------', ff.readline())
+                txtcontent = re.sub(pattern_rule2, '', txtcontent)
                 print(txtcontent)
 
             document = Document()  # 新建docx文件
