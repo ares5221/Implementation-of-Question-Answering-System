@@ -7,7 +7,7 @@ import re
 '''将一个目录下所有docx文件转成txt,文件名用docx中的数字序号，生成一个对应的空的ann文件'''
 path1 = os.path.abspath('./docxfile-part1')
 path2 = os.path.abspath('./docxfile-part2')
-
+path3 = os.path.abspath('./docxfile-part3')
 all_FileNum = 0
 
 
@@ -18,7 +18,6 @@ def Translate(path):
         if (f[0] == '~' or f[0] == '.'):
             continue
         filepath = path + '\\' + f
-        # print(filepath[-5:], type(filepath[:-5]))
         if filepath[-5:] == '.docx':
             print(f)
             filename = re.sub("\D", "", f)
@@ -31,13 +30,14 @@ def Translate(path):
                 with open(savename, 'a', encoding='utf-8') as ff:
                     ff.write(paragraph.text)
                     ff.write('\n')
-                # annname = filename + '.ann'  # 生成对应的空.ann文件
-                # with open(annname, 'a', encoding='utf-8') as ff:
-                #     ff.write('')
+                annname = filename + '.ann'  # 生成对应的空.ann文件
+                with open(annname, 'a', encoding='utf-8') as ff:
+                    ff.write('')
             all_FileNum += 1
 
 
 if __name__ == '__main__':
-    Translate(path1)
+    # Translate(path1)
     # Translate(path2)
+    Translate(path3)
     print('文件夹中文件转换完毕，文件总数 = ', all_FileNum)
