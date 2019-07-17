@@ -30,11 +30,12 @@ def Translate(path):
                 with open(savename, 'a', encoding='utf-8') as ff:
                     ff.write(paragraph.text)
                     ff.write('\n')
+                annname = filename + '.ann'  # 生成对应的空.ann文件
+                with open(annname, 'a', encoding='utf-8') as ff:
+                    ff.write('')
             with open(savename, 'a', encoding='utf-8') as fff:
                 fff.write('健康  一般儿童  完整家庭  平静型家庭气氛  和谐型家庭气氛  父母健康  一般型')
-                # annname = filename + '.ann'  # 生成对应的空.ann文件
-                # with open(annname, 'a', encoding='utf-8') as ff:
-                #     ff.write('')
+
             all_FileNum += 1
 
 
