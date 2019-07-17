@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31b9b70f-1d7c-490c-b31b-c384b40e6030" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Tool-doc2txt/ChangeDocxName.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docx2txt.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tool-doc2txt/docx2txt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qa/mainServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/qa/mainServer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +16,8 @@
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$MLP.coverage" NAME="MLP Coverage Results" MODIFIED="1552013345813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$SegSentences.coverage" NAME="SegSentences Coverage Results" MODIFIED="1556439071220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool-doc2txt" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$ChangeDocxName.coverage" NAME="ChangeDocxName Coverage Results" MODIFIED="1562557951267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool-doc2txt" />
-    <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$mainServer.coverage" NAME="mainServer Coverage Results" MODIFIED="1554704738928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$trainQuestion2AnswerModel.coverage" NAME="trainQuestion2AnswerModel Coverage Results" MODIFIED="1556434181405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
+    <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$mainServer.coverage" NAME="mainServer Coverage Results" MODIFIED="1563267006742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$doc2txt2.coverage" NAME="doc2txt2 Coverage Results" MODIFIED="1557126082325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool-doc2txt" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$bertClient.coverage" NAME="bertClient Coverage Results" MODIFIED="1556418063371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$pytest_in_bertClient_py.coverage" NAME="pytest in bertClient.py Coverage Results" MODIFIED="1551767213114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
@@ -46,7 +45,7 @@
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$testMatchQuestion.coverage" NAME="testMatchQuestion Coverage Results" MODIFIED="1554366788723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$bertClientRun2.coverage" NAME="bertClientRun2 Coverage Results" MODIFIED="1554794896255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$doc2txt.coverage" NAME="doc2txt Coverage Results" MODIFIED="1555482069210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models/doc2txt" />
-    <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$docx2txt.coverage" NAME="docx2txt Coverage Results" MODIFIED="1562558537476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool-doc2txt" />
+    <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$docx2txt.coverage" NAME="docx2txt Coverage Results" MODIFIED="1563153919503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool-doc2txt" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$testmodel.coverage" NAME="testmodel Coverage Results" MODIFIED="1552977844637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$buildQQ1Q2Data.coverage" NAME="buildQQ1Q2Data Coverage Results" MODIFIED="1552556485753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$pytest_for_testMatchQuestion_testBERTEncode.coverage" NAME="pytest for testMatchQuestion.testBERTEncode Coverage Results" MODIFIED="1554109801566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
@@ -62,13 +61,13 @@
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$03get_XY_atec_data.coverage" NAME="03get_XY_atec_data Coverage Results" MODIFIED="1554191699328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa/datahandle" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4538965">
+    <splitter split-orientation="horizontal" split-proportion="0.4054776">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Tool-doc2txt/txt2docx.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="350">
+                <state relative-caret-position="684">
                   <caret line="40" column="37" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="37" />
                   <folding>
                     <element signature="e#45#54#0" expanded="true" />
@@ -77,11 +76,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Tool-doc2txt/docx2txt.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="361">
-                  <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+                <state relative-caret-position="474">
+                  <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
                   <folding>
                     <element signature="e#45#54#0" expanded="true" />
                   </folding>
@@ -89,26 +88,29 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/.gitignore">
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Tool-doc2txt/ChangeDocxName.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="95">
-                  <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+                <state relative-caret-position="441">
+                  <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+                  <folding>
+                    <element signature="e#46#55#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Tool-doc2txt/ChangeDocxName.py">
+            <entry file="file://$PROJECT_DIR$/qa/mainServer.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="157">
-                  <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+                <state relative-caret-position="683">
+                  <caret line="59" column="32" lean-forward="true" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
                   <folding>
-                    <element signature="e#46#55#0" expanded="true" />
+                    <element signature="e#45#56#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -127,7 +129,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cosine_similarity</find>
       <find>学生上课</find>
       <find>学生上课接话严重，怎么办</find>
       <find>问题正在讨论</find>
@@ -157,6 +158,7 @@
       <find>说谎</find>
       <find>queryvec</find>
       <find>filePath</find>
+      <find>Run</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -186,7 +188,6 @@
         <option value="$PROJECT_DIR$/qa/datahandle/03get_XY_atec_data.py" />
         <option value="$PROJECT_DIR$/qa/testMatchQuestion.py" />
         <option value="$PROJECT_DIR$/qa/trainQuestion2QuestionModel.py" />
-        <option value="$PROJECT_DIR$/qa/mainServer.py" />
         <option value="$PROJECT_DIR$/qa/__init__.py" />
         <option value="$PROJECT_DIR$/qa/testACC/01getTestQuestionData.py" />
         <option value="$PROJECT_DIR$/qa/calSimilarityByq2qModel.py" />
@@ -214,16 +215,17 @@
         <option value="$PROJECT_DIR$/qa/datahandle/04get_XY_qa_all_data.py" />
         <option value="$PROJECT_DIR$/Tool-doc2txt/txt2docx.py" />
         <option value="$PROJECT_DIR$/Tool-doc2txt/ChangeDocxName.py" />
-        <option value="$PROJECT_DIR$/Tool-doc2txt/docx2txt.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Tool-doc2txt/docx2txt.py" />
+        <option value="$PROJECT_DIR$/qa/mainServer.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="128" />
-    <option name="y" value="14" />
-    <option name="width" value="1839" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="8" />
+    <option name="y" value="5" />
+    <option name="width" value="1919" />
+    <option name="height" value="1014" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -239,6 +241,16 @@
             <path>
               <item name="Implementation-of-Question-Answering-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Implementation-of-Question-Answering-System" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Implementation-of-Question-Answering-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Implementation-of-Question-Answering-System" type="462c0819:PsiDirectoryNode" />
+              <item name="qa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Implementation-of-Question-Answering-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Implementation-of-Question-Answering-System" type="462c0819:PsiDirectoryNode" />
+              <item name="Tool-doc2txt" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -282,7 +294,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.docx2txt">
+  <component name="RunManager" selected="Python.mainServer">
     <configuration name="04get_XY_qa_all_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Implementation-of-Question-Answering-System" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -327,28 +339,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="doc2txt2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Implementation-of-Question-Answering-System" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tool-doc2txt" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="G:\tf-start\Implementation-of-Question-Answering-System\Tool-doc2txt\doc2docx.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="docx2txt" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Implementation-of-Question-Answering-System" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -363,6 +353,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tool-doc2txt/docx2txt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mainServer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Implementation-of-Question-Answering-System" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/qa" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qa/mainServer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -418,18 +430,18 @@
     <list>
       <item itemvalue="Python.testMatchQuestion" />
       <item itemvalue="Python.docx2txt" />
-      <item itemvalue="Python.doc2txt2" />
       <item itemvalue="Python.04get_XY_qa_all_data" />
       <item itemvalue="Python.txt2docx" />
       <item itemvalue="Python.ChangeDocxName" />
+      <item itemvalue="Python.mainServer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mainServer" />
         <item itemvalue="Python.docx2txt" />
         <item itemvalue="Python.ChangeDocxName" />
         <item itemvalue="Python.txt2docx" />
         <item itemvalue="Python.04get_XY_qa_all_data" />
-        <item itemvalue="Python.doc2txt2" />
       </list>
     </recent_temporary>
   </component>
@@ -459,7 +471,9 @@
       <workItem from="1561099222575" duration="8088000" />
       <workItem from="1561355746756" duration="1815000" />
       <workItem from="1561442099532" duration="3794000" />
-      <workItem from="1562223341005" duration="11730000" />
+      <workItem from="1562223341005" duration="12055000" />
+      <workItem from="1563152001854" duration="2203000" />
+      <workItem from="1563262181273" duration="3103000" />
     </task>
     <servers />
   </component>
@@ -493,7 +507,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="544608000" />
+    <option name="totallyTimeSpent" value="550239000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -505,15 +519,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="8" y="5" width="1919" height="1014" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1977612" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20387305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36876357" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38636363" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.307971" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -546,39 +560,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/log/Fun1Log.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="152">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/Fun2Log.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/testLog2.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="59" lean-forward="true" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tool-doc2txt/txtfiles/2.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/log/testLog.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
@@ -596,16 +577,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="57">
           <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qa/mainServer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-          <folding>
-            <element signature="e#45#56#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -917,19 +888,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tool-doc2txt/ChangeDocxName.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
-          <folding>
-            <element signature="e#46#55#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="95">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tool-doc2txt/txt2docx.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
+        <state relative-caret-position="684">
           <caret line="40" column="37" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="37" />
           <folding>
             <element signature="e#45#54#0" expanded="true" />
@@ -939,18 +907,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tool-doc2txt/docx2txt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        <state relative-caret-position="474">
+          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
           <folding>
             <element signature="e#45#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/Tool-doc2txt/ChangeDocxName.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        <state relative-caret-position="441">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+          <folding>
+            <element signature="e#46#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/python/Lib/site-packages/aiohttp/web.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="374" column="4" selection-start-line="374" selection-start-column="4" selection-end-line="374" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/python/Lib/asyncio/events.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-43">
+          <caret line="319" column="8" selection-start-line="319" selection-start-column="8" selection-end-line="319" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/python/Lib/asyncio/base_events.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="755">
+          <caret line="472" selection-start-line="472" selection-end-line="472" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/python/Lib/site-packages/aiohttp/web_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="97" column="36" lean-forward="true" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qa/mainServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="683">
+          <caret line="59" column="32" lean-forward="true" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+          <folding>
+            <element signature="e#45#56#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
