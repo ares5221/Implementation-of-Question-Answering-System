@@ -2,7 +2,470 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31b9b70f-1d7c-490c-b31b-c384b40e6030" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docx2txt.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tool-doc2txt/docx2txt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/ChangeDocxName.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/SegSentences.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/doc2docx.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docx2txt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/00094.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/00134.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0033.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0034.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0035.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0036.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0037.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0038.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0039.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0040.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0041.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0042.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0043.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0044.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0045.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0046.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0047.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0048.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0049.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0050.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0051.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0052.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0053.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0054.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0055.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0056.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0057.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0058.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0059.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0060.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0062.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0063.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0064.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0065.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0066.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0067.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0068.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0069.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0070.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0071.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0072.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0073.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0074.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0075.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0076.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0077.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0078.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0079.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0080.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0081.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0082.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0083.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0084.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0085.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0086.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0087.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0088.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0089.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0090.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0091.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0092.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0093.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0094.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/009514.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0096.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/009715.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0098.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/010015.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/010110.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0102.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0103.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0104.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/01054.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0106.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0107.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/01083.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0109.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0110.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/01124.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0113.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0114.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/011520.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0116.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0117.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0118.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0119.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0120.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0121.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0122.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0123.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/012416.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0125.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0126.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0127.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0128.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0129.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0130.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0132.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0133.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0134.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0135.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0136.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0137.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0138.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0139.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0140.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0141.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0142.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0143.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0144.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0145.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0146.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0147.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/014816.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/01505.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0151.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/01524.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0153.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/015412.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0155.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/01564.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0157.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/01582013201417.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0159.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/01604.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0161.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0162.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/01639.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0164.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/016518.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0166.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/01672013201410.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0168.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0169.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0170.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/01712013201414.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0172.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/017315.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0174.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0175.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0176.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/017711.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0178.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/01791.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0180.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0181.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/01827.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0183.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0185.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/01866.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0187.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/018818.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0189.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/01907.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/019211.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0193.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/01942.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0195.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/01967.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0197.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0198.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0199.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/02009.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0201.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/020415.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0205.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/020614.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/02072.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/02091.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0210.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0211.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0212.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0213.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0214.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0215.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0216.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/021716.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0218.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0219.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0220.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/02212.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0222.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/02237.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0224.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0225.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0226.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/02283.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0229.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/023012.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0231.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0232.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0233.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0234.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0236.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0238.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0239.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0240.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0241.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0242.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0244.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/024514.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0246.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0247.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0248.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0249.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/025020122013.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0251.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/025276.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0253.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/02549.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0255.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0256.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0258.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0260.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0261.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/026318.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0264.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0265.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0266.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0267.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0268.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0269.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0270.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0272.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/02732012.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0274.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0275.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0276.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0277.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0278.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/027912.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0280.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0281.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0282.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0283.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0284.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/028511.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0286.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0287.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0288.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/02899.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0290.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0291.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0292.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0293.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/02942.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0295.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0296.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/02986.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0299.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0300.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0301.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0302.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0304.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0305.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0306.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0307.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/030818.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0309.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0310.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/031119.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0312.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/031414.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0315.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0316.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0317.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0318201120128.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0319.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0320.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0321.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/03225.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0323.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/032414.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0325.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/032620.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0327.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/03287.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/032920112012.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0331.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/03324.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0333.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0334.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0335.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0336.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0337.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0338.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0339.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0340.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0341.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/03429.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/03431.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0344.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0345.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0346.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0347.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0348.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/034918.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0350.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/03513.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0352.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0353.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0355.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0356.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/035718.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0358.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0359.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0360.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0361.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0362.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0363.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0364.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/036610.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0367.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0368.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0369.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0371.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0372.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0373.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/037418.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0375.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0376.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0378.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0379.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0380.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0381.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0382.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0383.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/038414.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0385.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0386.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0387.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0388.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/038912.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0390.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0391.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0392.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0393.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0394.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0395.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0396.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0397.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0398.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0399.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0400.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0401.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0402.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0403.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0404.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0405.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0407.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0409.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0410.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/041119.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0412.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0413.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0414.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0415.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/041611.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0417.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/041820102.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0419.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0420.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0421014.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/042220102011.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0423.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/042417.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0425.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0426.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0427.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0428.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0430.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0431.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0432201522015.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0433.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0435.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0436.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/04377.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0438.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0439.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0441.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/04422010201118.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0443.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0444.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0445.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0446.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/04471.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/04481.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0449.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0450.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/04519.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0452.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0453.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0454.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0455.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0456.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0457.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0458.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0459.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0460.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0461.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0462.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0463.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0464.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0465.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0466.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0467.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0468.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0469.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/047117.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0473.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0477.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0479.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/048018.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0482.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0485.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0488.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0490.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0491.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0494.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0496.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0499.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/050121.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/050323.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0505.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0506.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0508.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0512.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0515.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0518.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0521.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0524.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0526.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0528.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0530.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0531.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0533.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0536.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0538.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0541.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0543.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0545.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0547.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0548.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0551.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0553.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0555.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0556.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0559.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0560.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0563.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0564.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0567.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0569.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/docxfolder/0571.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/txt2docx.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/txtfiles/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/txtfiles/2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/worktxtfiles/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tool-doc2txt/worktxtfiles/2.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,9 +478,9 @@
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$SegSentences.coverage" NAME="SegSentences Coverage Results" MODIFIED="1556439071220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool-doc2txt" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$ChangeDocxName.coverage" NAME="ChangeDocxName Coverage Results" MODIFIED="1562557951267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool-doc2txt" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$trainQuestion2AnswerModel.coverage" NAME="trainQuestion2AnswerModel Coverage Results" MODIFIED="1556434181405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
-    <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$mainServer.coverage" NAME="mainServer Coverage Results" MODIFIED="1563267006742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
+    <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$mainServer.coverage" NAME="mainServer Coverage Results" MODIFIED="1565580681128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$doc2txt2.coverage" NAME="doc2txt2 Coverage Results" MODIFIED="1557126082325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool-doc2txt" />
-    <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$bertClient.coverage" NAME="bertClient Coverage Results" MODIFIED="1556418063371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
+    <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$bertClient.coverage" NAME="bertClient Coverage Results" MODIFIED="1565580701694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$pytest_in_bertClient_py.coverage" NAME="pytest in bertClient.py Coverage Results" MODIFIED="1551767213114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$processQAData.coverage" NAME="processQAData Coverage Results" MODIFIED="1551867252517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$binarySerach.coverage" NAME="binarySerach Coverage Results" MODIFIED="1556269123036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
@@ -25,13 +488,15 @@
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$buildAllquestAnsWroAData__1_.coverage" NAME="buildAllquestAnsWroAData (1) Coverage Results" MODIFIED="1552898672590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$01dataClean.coverage" NAME="01dataClean Coverage Results" MODIFIED="1555291655563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa/datahandle" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$test.coverage" NAME="test Coverage Results" MODIFIED="1552374040590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models/mlp" />
+    <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$doc2docx.coverage" NAME="doc2docx Coverage Results" MODIFIED="1564122866514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool-doc2txt" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$buildQuestionAnswerData.coverage" NAME="buildQuestionAnswerData Coverage Results" MODIFIED="1552554714036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
-    <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$calSimilarityByq2qModel.coverage" NAME="calSimilarityByq2qModel Coverage Results" MODIFIED="1554704015642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
+    <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$calSimilarityByq2qModel.coverage" NAME="calSimilarityByq2qModel Coverage Results" MODIFIED="1565230862760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$BSTSearch.coverage" NAME="BSTSearch Coverage Results" MODIFIED="1556268566432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$trainQuestionMatchModel.coverage" NAME="trainQuestionMatchModel Coverage Results" MODIFIED="1552896945272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$constructQQ1Q2Data.coverage" NAME="constructQQ1Q2Data Coverage Results" MODIFIED="1552554994394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$getQ_Alist.coverage" NAME="getQ-Alist Coverage Results" MODIFIED="1556158980696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool-dataclean" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$txt2docx.coverage" NAME="txt2docx Coverage Results" MODIFIED="1561510547760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool-doc2txt" />
+    <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$change_docx_full_name.coverage" NAME="change_docx_full_name Coverage Results" MODIFIED="1564131168258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool-doc2txt" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$get_XY_qa_all_data.coverage" NAME="get_XY_qa_all_data Coverage Results" MODIFIED="1553054161218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa/datahandle" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$getAnswerByq2aModel.coverage" NAME="getAnswerByq2aModel Coverage Results" MODIFIED="1555300710866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa" />
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$doc2txt__1_.coverage" NAME="doc2txt (1) Coverage Results" MODIFIED="1555487701398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools" />
@@ -59,29 +524,73 @@
     <SUITE FILE_PATH="coverage/Implementation_of_Question_Answering_System$03get_XY_atec_data.coverage" NAME="03get_XY_atec_data Coverage Results" MODIFIED="1554191699328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qa/datahandle" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47696477">
+    <splitter split-orientation="horizontal" split-proportion="0.4714194">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Tool-doc2txt/txt2docx.py">
+            <entry file="file://$PROJECT_DIR$/qa/bertClientPro.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="570">
-                  <caret line="40" column="37" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="37" />
+                <state relative-caret-position="874">
+                  <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
                   <folding>
-                    <element signature="e#45#54#0" expanded="true" />
+                    <element signature="e#45#87#0" expanded="true" />
+                    <element signature="e#436#704#0" />
+                    <element signature="e#1905#2433#0" />
+                    <element signature="e#2467#2800#0" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Tool-doc2txt/docx2txt.py">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/qa/bertClientRun2.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="550">
-                  <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+                <state relative-caret-position="285">
+                  <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
                   <folding>
-                    <element signature="e#45#54#0" expanded="true" />
+                    <element signature="e#45#55#0" expanded="true" />
+                    <element signature="e#1030#1356#0" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/qa/mainServer.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="304">
+                  <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+                  <folding>
+                    <element signature="e#45#56#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/qa/testMatchQuestion.py">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/qa/bertClient.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="617">
+                  <caret line="87" column="26" lean-forward="true" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
+                  <folding>
+                    <element signature="e#45#87#0" expanded="true" />
+                    <element signature="e#322#590#0" />
+                    <element signature="e#1785#2111#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/qa/trainQuestion2QuestionModel.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="361">
+                  <caret line="22" selection-start-line="22" selection-end-line="22" />
                 </state>
               </provider>
             </entry>
@@ -90,25 +599,15 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Tool-doc2txt/ChangeDocxName.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="494">
-                  <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#46#55#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/qa/mainServer.py">
+            <entry file="file://$PROJECT_DIR$/qa/calSimilarityByq2qModel.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="698">
-                  <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+                <state relative-caret-position="374">
+                  <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
                   <folding>
-                    <element signature="e#45#56#0" expanded="true" />
+                    <element signature="e#45#87#0" expanded="true" />
+                    <element signature="e#870#1015#0" />
+                    <element signature="e#1029#1153#0" />
                   </folding>
                 </state>
               </provider>
@@ -127,7 +626,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>学生上课</find>
       <find>学生上课接话严重，怎么办</find>
       <find>问题正在讨论</find>
       <find>写作业</find>
@@ -157,7 +655,11 @@
       <find>queryvec</find>
       <find>filePath</find>
       <find>Run</find>
+      <find>int(fname[:-4])</find>
     </findStrings>
+    <replaceStrings>
+      <replace>index</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -165,8 +667,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/qa/impMLPbyTF.py" />
-        <option value="$PROJECT_DIR$/qa/buildQuestionAnswerData.py" />
         <option value="$PROJECT_DIR$/qa/constructQQ1Q2Data.py" />
         <option value="$PROJECT_DIR$/qa/buildQuestionMatchModel.py" />
         <option value="$PROJECT_DIR$/qa/buildQQ1Q2Data.py" />
@@ -209,19 +709,21 @@
         <option value="$PROJECT_DIR$/qa/bertClientRun3.py" />
         <option value="$PROJECT_DIR$/Tool-doc2txt/SegSentences.py" />
         <option value="$PROJECT_DIR$/Tool-doc2txt/doc2txt2.py" />
-        <option value="$PROJECT_DIR$/Tool-doc2txt/doc2docx.py" />
         <option value="$PROJECT_DIR$/qa/datahandle/04get_XY_qa_all_data.py" />
         <option value="$PROJECT_DIR$/Tool-doc2txt/txt2docx.py" />
-        <option value="$PROJECT_DIR$/Tool-doc2txt/ChangeDocxName.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/qa/mainServer.py" />
         <option value="$PROJECT_DIR$/Tool-doc2txt/docx2txt.py" />
+        <option value="$PROJECT_DIR$/Tool-doc2txt/doc2docx.py" />
+        <option value="$PROJECT_DIR$/Tool-doc2txt/ChangeDocxName.py" />
+        <option value="$PROJECT_DIR$/Tool-doc2txt/change_docx_full_name.py" />
+        <option value="$PROJECT_DIR$/Tool-doc2txt/change_excel_ID.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="8" />
-    <option name="y" value="5" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="10" />
+    <option name="y" value="25" />
     <option name="width" value="1919" />
     <option name="height" value="1014" />
   </component>
@@ -233,6 +735,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,13 +751,12 @@
             <path>
               <item name="Implementation-of-Question-Answering-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Implementation-of-Question-Answering-System" type="462c0819:PsiDirectoryNode" />
-              <item name="Tool-doc2txt" type="462c0819:PsiDirectoryNode" />
+              <item name="Tool-dataclean" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -266,9 +768,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\tf-start\Implementation-of-Question-Answering-System\Tool-doc2txt" />
       <recent name="G:\tf-start\Implementation-of-Question-Answering-System\Tool-doc2txt\txtfolderFordocx" />
       <recent name="G:\tf-start\Implementation-of-Question-Answering-System\Tool-doc2txt\docxfile" />
-      <recent name="G:\tf-start\Implementation-of-Question-Answering-System\Tool-doc2txt" />
       <recent name="G:\tf-start\Implementation-of-Question-Answering-System\qa" />
       <recent name="G:\tf-start\Implementation-of-Question-Answering-System\qa\datahandle" />
     </key>
@@ -292,8 +794,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mainServer">
-    <configuration name="04get_XY_qa_all_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.bertClient">
+    <configuration name="bertClient" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Implementation-of-Question-Answering-System" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -301,12 +803,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/qa/datahandle" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/qa" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qa/datahandle/04get_XY_qa_all_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qa/bertClient.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -315,7 +817,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ChangeDocxName" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="calSimilarityByq2qModel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Implementation-of-Question-Answering-System" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/qa" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qa/calSimilarityByq2qModel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="change_docx_full_name" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Implementation-of-Question-Answering-System" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -328,7 +852,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tool-doc2txt/ChangeDocxName.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tool-doc2txt/change_docx_full_name.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -337,7 +861,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="docx2txt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="doc2docx" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Implementation-of-Question-Answering-System" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -350,7 +874,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tool-doc2txt/docx2txt.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tool-doc2txt/doc2docx.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -403,43 +927,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="txt2docx" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Implementation-of-Question-Answering-System" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tool-doc2txt" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tool-doc2txt/txt2docx.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.testMatchQuestion" />
-      <item itemvalue="Python.docx2txt" />
-      <item itemvalue="Python.04get_XY_qa_all_data" />
-      <item itemvalue="Python.txt2docx" />
-      <item itemvalue="Python.ChangeDocxName" />
       <item itemvalue="Python.mainServer" />
+      <item itemvalue="Python.doc2docx" />
+      <item itemvalue="Python.change_docx_full_name" />
+      <item itemvalue="Python.calSimilarityByq2qModel" />
+      <item itemvalue="Python.bertClient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.bertClient" />
         <item itemvalue="Python.mainServer" />
-        <item itemvalue="Python.docx2txt" />
-        <item itemvalue="Python.ChangeDocxName" />
-        <item itemvalue="Python.txt2docx" />
-        <item itemvalue="Python.04get_XY_qa_all_data" />
+        <item itemvalue="Python.calSimilarityByq2qModel" />
+        <item itemvalue="Python.change_docx_full_name" />
+        <item itemvalue="Python.doc2docx" />
       </list>
     </recent_temporary>
   </component>
@@ -472,7 +974,17 @@
       <workItem from="1562223341005" duration="12055000" />
       <workItem from="1563152001854" duration="2203000" />
       <workItem from="1563262181273" duration="3103000" />
-      <workItem from="1563354257677" duration="73000" />
+      <workItem from="1563354257677" duration="140000" />
+      <workItem from="1563410145525" duration="646000" />
+      <workItem from="1563437527675" duration="731000" />
+      <workItem from="1563842466534" duration="1837000" />
+      <workItem from="1564111127629" duration="8557000" />
+      <workItem from="1564132948249" duration="201000" />
+      <workItem from="1564553745128" duration="119000" />
+      <workItem from="1564553960018" duration="622000" />
+      <workItem from="1564736160413" duration="17000" />
+      <workItem from="1565058770389" duration="11007000" />
+      <workItem from="1565570481413" duration="2286000" />
     </task>
     <servers />
   </component>
@@ -506,7 +1018,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="550312000" />
+    <option name="totallyTimeSpent" value="576402000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -518,15 +1030,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="5" width="1919" height="1014" extended-state="0" />
-    <editor active="true" />
+    <frame x="10" y="25" width="1919" height="1014" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20602475" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1640667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38636363" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29090908" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.307971" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -559,64 +1070,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/log/testLog.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="557">
-          <caret line="49" column="26" lean-forward="true" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/testLog1.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="57">
-          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qa/datahandle/03get_XY_atec_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding>
-            <element signature="e#45#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/q-a-list-data.csv" />
-    <entry file="file://$PROJECT_DIR$/data/datacopy425/qa-clean-data.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="190">
-          <caret line="177" column="12" selection-start-line="177" selection-end-line="177" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/datacopy425/AllquestAnsWroA.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="475">
-          <caret line="1407" column="16" selection-start-line="1407" selection-end-line="1407" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qa/datahandle/01dataClean.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="12" column="58" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="58" />
-          <folding>
-            <element signature="e#45#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qa/datahandle/buildQQ1Q2Data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -670,33 +1123,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qa/BSTSearch.py" />
     <entry file="file://$PROJECT_DIR$/qa/binarySerach.py" />
-    <entry file="file://$PROJECT_DIR$/qa/01getTestQuestionData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="e#45#54#0" expanded="true" />
-            <element signature="e#1057#4296#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qa/bertClientRun3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="931">
           <caret line="49" lean-forward="true" selection-end-line="56" />
           <folding>
             <element signature="e#45#87#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qa/datahandle/02buildData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
-          <caret line="59" column="32" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="32" />
-          <folding>
-            <element signature="e#45#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -752,13 +1184,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tool-dataclean/getQ-Alist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1182">
-          <caret line="189" column="23" selection-start-line="189" selection-start-column="23" selection-end-line="189" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/q-a-all-list-data.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
@@ -777,17 +1202,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qa/bertClientRun2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#45#55#0" expanded="true" />
-            <element signature="e#1030#1356#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qa/trainQuestion2AnswerModel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -798,41 +1212,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qa/trainQuestion2QuestionModel.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/mlp/impMLPbyTF.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qa/calSimilarityByq2qModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="62" column="31" lean-forward="true" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
-          <folding>
-            <element signature="e#580#821#0" />
-            <element signature="e#870#1015#0" />
-            <element signature="e#1029#1153#0" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/mlp/MLP.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qa/bertClient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
-          <folding>
-            <element signature="e#45#87#0" expanded="true" />
-            <element signature="e#322#590#0" />
-            <element signature="e#1419#1739#0" />
-            <element signature="e#1785#2111#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -853,40 +1239,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qa/bertClientPro.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
-          <folding>
-            <element signature="e#45#87#0" expanded="true" />
-            <element signature="e#436#704#0" />
-            <element signature="e#1905#2433#0" />
-            <element signature="e#2467#2800#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tool-doc2txt/txtfolderFordocx/0637 例.txt" />
-    <entry file="file://$PROJECT_DIR$/Tool-doc2txt/SegSentences.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
-          <folding>
-            <element signature="e#45#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tool-doc2txt/doc2docx.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="37" column="26" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="26" />
-          <folding>
-            <element signature="e#45#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -922,30 +1275,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tool-doc2txt/ChangeDocxName.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-          <folding>
-            <element signature="e#46#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qa/mainServer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
-          <folding>
-            <element signature="e#45#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tool-doc2txt/txt2docx.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
+        <state relative-caret-position="760">
           <caret line="40" column="37" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="37" />
+          <folding>
+            <element signature="e#45#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tool-doc2txt/SegSentences.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
           <folding>
             <element signature="e#45#54#0" expanded="true" />
           </folding>
@@ -954,10 +1297,166 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tool-doc2txt/docx2txt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
+        <state relative-caret-position="646">
           <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
           <folding>
             <element signature="e#45#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tool-doc2txt/doc2docx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="22" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+          <folding>
+            <element signature="e#45#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tool-doc2txt/change_excel_ID.py" />
+    <entry file="file://$PROJECT_DIR$/Tool-doc2txt/ChangeDocxName.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="47" />
+          <folding>
+            <element signature="e#46#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qa/01getTestQuestionData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <element signature="e#45#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tool-doc2txt/change_docx_full_name.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="46" />
+          <folding>
+            <element signature="e#45#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/datacopy425/atec_nlp1.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/datacopy425/atec_nlp_sim_train-source.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/datacopy425/atec_nlp.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qa/datahandle/02buildData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="35" column="73" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="73" />
+          <folding>
+            <element signature="e#45#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qa/datahandle/03get_XY_atec_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="41" />
+          <folding>
+            <element signature="e#45#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qa/bertClientPro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+          <folding>
+            <element signature="e#45#87#0" expanded="true" />
+            <element signature="e#436#704#0" />
+            <element signature="e#1905#2433#0" />
+            <element signature="e#2467#2800#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qa/trainQuestion2QuestionModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tool-dataclean/getQ-Alist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="189" column="23" selection-start-line="189" selection-start-column="23" selection-end-line="189" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qa/calSimilarityByq2qModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#45#87#0" expanded="true" />
+            <element signature="e#870#1015#0" />
+            <element signature="e#1029#1153#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qa/bertClientRun2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#45#55#0" expanded="true" />
+            <element signature="e#1030#1356#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qa/mainServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding>
+            <element signature="e#45#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qa/testMatchQuestion.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qa/bertClient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="87" column="26" lean-forward="true" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
+          <folding>
+            <element signature="e#45#87#0" expanded="true" />
+            <element signature="e#322#590#0" />
+            <element signature="e#1785#2111#0" />
           </folding>
         </state>
       </provider>
